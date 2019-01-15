@@ -5,17 +5,21 @@
 	<title>Live2D！把可爱的看板娘扑捉到你的博客去吧！</title>
     <link rel="stylesheet" href="/huno/live2d/css/live2d.css">
 </head>
-
-        <body>
-            <script src="/huno/lib/encrypt.js"></script>
-            <div id="foxglove" style="display: none">  
-                <div id="foxglove-cipher-text" style="display: none">U2FsdGVkX19qZZ8BvOTBFYN9LxK1VnXwgGkee+wjaE/5tyN+d++bbRj3EUPcPbHAQPJCbxEDtq1i4uOWDh94KHUiweiSyFDWrDYEQf/2V2ny+tE4xbwvsYAugZLtEFPpIPNVlTg//RT8CIb6158thiCmv+titxQDTFZhfuim7s/txzznJRv6Rp4keZGJ4rxVMcYisgeKX+9zMyo1ST9l5qB1LVGXzFK4nyi5CovsskByeWKeM/QXOXRcvF5j1jsrnxbAblvPVd1OgnMZGho8xLnIZHS+r2U0z2iNdxMAeqj597TWDT8RftfCEtn2dbhWeBmjUw0ujBdNyGlGmJqSQrnqbAHiRBIqCEDFVQlzBh0tQN9FINLg88nbLWTcQjo5MKyeP4C52+D7vd89+epwPgsUKRXv1YIFfOPbTtSesC2fLNnEwTQl7XZpKjPtAB+Xw+u0EnRvVGXlckkc2Eul1Jil7mPoizgbYnWISaIOauLE9JXOy7+Dkd6oAkuf2Gpqr1m2+Tbz8kas77Tlu1oDXp+2tBP/js3WUpLQ9X5782vEGDdt3gI7u9x899qbqV4vxxJJmJsErRbI9YWm9frPkO2qYPIhgPWkLF4Zb/0PimGyod36TV7H76dQFYd3uzD9paLNYXgkjbHuPCM0YPYQTIUFpDCQF/CPufEOhhhkkSAkhz9+2YcwvQZK4zuUp308lIFZfQBz6x8cjgg8pE3gvo/h8qYIGSrjKWcjgROuSw73FQggowEgkpXuqDzoOqAp7gXGMrx5/fV/D2j346uyXlfhoHEcp3qi3f4+NP0wwVEOuFyR6bL9A9kiu1+gT53LzDRdseWQ30RXpwyF5Ms5BbaZtUc0WMCOHS1dhFKtFfemPejVaqy6ltMQgfaBQ1vmSomDpx29CmGRx44X0y12NqDKQoPkzE3GuXnFO7z3o4I=</div>
-                <div id="foxglove-info">
-                    <p>请输入手冲代码(*/ω＼*)</p>
-                    <input type="password">
-                    <!--<button onclick=" ">Submit</button>-->                       
-                </div>   
-            </div>
-        </body>
-    
+<body>
+<div id="landlord">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="hide-button">隐藏</div>
+</div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+    var message_Path = '/huno/live2d/'
+    var home_Path = 'https://haremu.com/'
+</script>
+<script type="text/javascript" src="/huno/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="/huno/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "/huno/live2d/model/tia/model.json");
+</script>
+</body>
 </html>
