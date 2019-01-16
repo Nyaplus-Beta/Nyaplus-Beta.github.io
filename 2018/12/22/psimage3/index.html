@@ -1,266 +1,539 @@
 <!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Aaliyah">
+    
+    
+    
+    
+    
+    
+    <title>【教程】点开就变的图片简单的制作方法(4) | 艾莉雅哒笔记</title>
+    <!-- inject:style -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <!-- endinject -->
+    <style>
+        .cube-loading {
+            top: 0;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('/images/lg/loading.gif') no-repeat center center;
+            background-color: rgba(0,0,0,.7);
+        }
 
-    
+        .cube-loading.out {
+            display: none;
+        }
 
-    <title>
-      【教程】点开就变的图片简单的制作方法(4) | 艾莉雅哒笔记 
-    </title>
+        .cube-loading:before {
+            display: block;
+            content: '加载中';
+            position: relative;
+            width: 100%;
+            top: 50%;
+            right: -50%;
+            color: #fff;
+        }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
-      <meta name="author" content="Aaliyah">
-    
-    
+        @media(max-width: 768px) {
+            .cube-loading:before {
+                font-size: 1.2em;
+                transform: translate(-24px,20px);
+                -webkit-transform: translate(-24px,20px);
+                -o-transform: translate(-24px,20px);
+                -ms-transform: translate(-24px,20px);
+            }
+        }
 
-    <meta name="description" content="又一个点击图片变化的方法">
-<meta name="keywords" content="-图片点击变化 -幻影坦克 -开车方法">
-<meta property="og:type" content="article">
-<meta property="og:title" content="【教程】点开就变的图片简单的制作方法(4) | 艾莉雅哒笔记">
-<meta property="og:url" content="http://www.rua.kim/2018/12/22/psimage3/index.html">
-<meta property="og:site_name" content="艾莉雅哒笔记">
-<meta property="og:description" content="又一个点击图片变化的方法">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q1.gif">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q2.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q3.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q4.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q5.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q6.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q7.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q8.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q9.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q10.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q11.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q12.jpg">
-<meta property="og:image" content="http://www.rua.kim/2018/12/22/psimage3/q13.jpg">
-<meta property="og:updated_time" content="2018-12-21T18:25:10.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【教程】点开就变的图片简单的制作方法(4) | 艾莉雅哒笔记">
-<meta name="twitter:description" content="又一个点击图片变化的方法">
-<meta name="twitter:image" content="http://www.rua.kim/2018/12/22/psimage3/q1.gif">
-    
-    
-    
-      <link rel="icon" type="image/x-icon" href="/favicon.png">
-    
-    <link rel="stylesheet" href="/css/uno.css">
-    <link rel="stylesheet" href="/css/highlight.css">
-    <link rel="stylesheet" href="/css/archive.css">
-    <link rel="stylesheet" href="/css/china-social-icon.css">
+        @media(min-width: 768px) {
+            .cube-loading:before {
 
-</head>
+            }
+        }
+    </style>
+    
+</head></html>
 <body>
-
-    <span class="mobile btn-mobile-menu">
-        <i class="icon icon-list btn-mobile-menu__icon"></i>
-        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-    </span>
-
+<div class="cube-body">
+    <nav id="cube-top-memu" class="cube-menu">
+    <ul class="cube-menu-collapse">
+        
+        <li>
+            <i class="cube-icon cube-icon-home" aria-hidden="true"></i>
+            <a href="/">首页</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-archive" aria-hidden="true"></i>
+            <a href="/archives">归档</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-categories" aria-hidden="true"></i>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-tags" aria-hidden="true"></i>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-about" aria-hidden="true"></i>
+            <a href="/about-me">关于我</a>
+        </li>
+        
+    </ul>
+</nav>
+<nav class="cube-side-menu" id="cube-side-menu">
+    <ul class="cube-menu-list">
+        
+        <li>
+            <a class="lrc-control">开启歌词</a>
+        </li>
+        
+        <li>
+            <a class="scroll-to-top">回到顶部</a>
+        </li>
+    </ul>
+</nav>
+    <header class="cube-header" id="cube-header">
+    <img src=" http://cube-1252774894.cosgz.myqcloud.com/background.png " alt="头部背景图片">
     
-
-<header class="panel-cover panel-cover--collapsed">
-
-
-  <div class="panel-main">
-
-  
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-
-        
-
-        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">艾莉雅哒笔记</a></h1>
-        <hr class="panel-cover__divider">
-
-        
-        <p class="panel-cover__description">
-          记录一些杂七杂八的东西(/≧▽≦/)
-        </p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
-        
-
-        <div class="navigation-wrapper">
-
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-
-              
-                
-                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
-              
-                
-                <li class="navigation__item"><a href="/tags" title="" class="">标签</a></li>
-              
-                
-                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">返回</a></li>
-              
-
-            </ul>
-          </nav>
-
-          <!-- ----------------------------
-To add a new social icon simply duplicate one of the list items from below
-and change the class in the <i> tag to match the desired social network
-and then add your link to the <a>. Here is a full list of social network
-classes that you can use:
-
-    icon-social-500px
-    icon-social-behance
-    icon-social-delicious
-    icon-social-designer-news
-    icon-social-deviant-art
-    icon-social-digg
-    icon-social-dribbble
-    icon-social-facebook
-    icon-social-flickr
-    icon-social-forrst
-    icon-social-foursquare
-    icon-social-github
-    icon-social-google-plus
-    icon-social-hi5
-    icon-social-instagram
-    icon-social-lastfm
-    icon-social-linkedin
-    icon-social-medium
-    icon-social-myspace
-    icon-social-path
-    icon-social-pinterest
-    icon-social-rdio
-    icon-social-reddit
-    icon-social-skype
-    icon-social-spotify
-    icon-social-stack-overflow
-    icon-social-steam
-    icon-social-stumbleupon
-    icon-social-treehouse
-    icon-social-tumblr
-    icon-social-twitter
-    icon-social-vimeo
-    icon-social-xbox
-    icon-social-yelp
-    icon-social-youtube
-    icon-social-zerply
-    icon-mail
-
--------------------------------->
-
-<!-- add social info here -->
-
-
-
-        </div>
-
-      </div>
-
+    <div class="cube-type">
+        <span class="cube-typed-title">艾莉雅の笔记</span>
+        <span class="cube-typed-cursor">|</span>
     </div>
-
-    <div class="panel-cover--overlay"></div>
-  </div>
+    
 </header>
 
-    <div class="content-wrapper">
-        <div class="content-wrapper__inner entry">
-            
+    <style>
+        nav.cube-menu:before {
+            content: '';
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 44px;
+        
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+        
+            z-index: -1;
+            background-image: url('/images/../../images/bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center -6px;
+            background-size: cover;
+            background-color: transparent;
+        }
 
-<article class="post-container post-container--single">
+        header.cube-background.cube-header-background {
+            visibility: hidden;
+            background-image: url('/images/../../images/bg.jpg');
+            background-position: center -50px;
+        }
+    </style>
+    <header class="cube-background cube-header-background">
+        
+        <div class="cube-type">
+            <span class="cube-typed-title">艾莉雅の笔记</span>
+            <span class="cube-typed-cursor">|</span>
+        </div>
+        
+    </header>
+    <div class="load-header-background"></div>
+    <script>
+        (function (window) {
 
-  <header class="post-header">
+            window.headerModule = {}
+            window.headerModule.image = {
+                width: '2000',
+                height: '1414'
+            }
+
+        })(window)
+    </script>
     
-    <h1 class="post-title">【教程】点开就变的图片简单的制作方法(4)</h1>
-
+    <div class="cube-content">
+        <div class="cube-left">
+            <div class="cube-article">
+    <h1 class="title">【教程】点开就变的图片简单的制作方法(4)</h1>
     
-
-    <div class="post-meta">
-      <time datetime="2018-12-22" class="post-meta__date date">2018-12-22</time> 
-
-      <span class="post-meta__tags tags">
-
-          
-            <font class="categories">
-            &#8226; 分类:
-            <a class="categories-link" href="/categories/教程/">教程</a>
-            </font>
-          
-
-          
-             &#8226; 标签:
-            <font class="tags">
-              <a class="tags-link" href="/tags/图片点击变化-幻影坦克-开车方法/">-图片点击变化 -幻影坦克 -开车方法</a>
-            </font>
-          
-
-      </span>
+    <div class="cube-article-header">
+        <div class="cube-article-date">
+            <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
+            <!-- moment.js对象 -->
+            2018-12-22
+        </div>
+        <div class="cube-article-tags">
+    <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
+    
+    <a href="/tags/图片点击变化-幻影坦克-开车方法/">#-图片点击变化 -幻影坦克 -开车方法</a>
+    
+</div>
     </div>
     
-    
-
-  </header>
-
-  <section id="post-content" class="article-content post">
-    <p><img src="/2018/12/22/psimage3/q1.gif" alt="老司机"><br>又一个点击图片变化的方法<br><a id="more"></a><br>1.首先，打开PS<br>找到你所中意的图<br><img src="/2018/12/22/psimage3/q2.jpg" alt="test"><br>2.将图片黑白化：<br>如图所示，找到“色相/饱和度”<br><img src="/2018/12/22/psimage3/q3.jpg" alt="test"><br>3.<br>在“饱和度”一栏拉到底<br>黑白化完成<br><img src="/2018/12/22/psimage3/q4.jpg" alt="test"><br>4.<br>找到到右下角的“通道”<br>之后点击图中红圈所示的“将通道作为选区载入”<br><img src="/2018/12/22/psimage3/q5.jpg" alt="test"><br>5.<br>点击完“将通道作为选区载入”后，PS就自动选择了图片中浅色的部分<br>但是我们要去除图中深色的部分<br>所以点击“反选”<br><img src="/2018/12/22/psimage3/q6.jpg" alt="test"><br>6.<br>“反选”后，再按下“Delete”键<br>就把深色的地方消除啦~<br>（虽然看上去有点奇怪）<br><img src="/2018/12/22/psimage3/q7.jpg" alt="test"><br>7.<br>然而，其实这样子并没有完全消除灰色的部分<br>所以，最后找到“色阶”<br><img src="/2018/12/22/psimage3/q8.jpg" alt="test"><br>将“输出色阶”一开始在左边的黑色小三角拉到右边<br><img src="/2018/12/22/psimage3/q9.jpg" alt="test"><br>这样就大功告成啦，别忘了用.PNG格式保存哦</p>
+    <div class="cube-article-content cube-markdown">
+        
+        <p><img src="/2018/12/22/psimage3/q1.gif" alt="老司机"><br>又一个点击图片变化的方法<br><a id="more"></a><br>1.首先，打开PS<br>找到你所中意的图<br><img src="/2018/12/22/psimage3/q2.jpg" alt="test"><br>2.将图片黑白化：<br>如图所示，找到“色相/饱和度”<br><img src="/2018/12/22/psimage3/q3.jpg" alt="test"><br>3.<br>在“饱和度”一栏拉到底<br>黑白化完成<br><img src="/2018/12/22/psimage3/q4.jpg" alt="test"><br>4.<br>找到到右下角的“通道”<br>之后点击图中红圈所示的“将通道作为选区载入”<br><img src="/2018/12/22/psimage3/q5.jpg" alt="test"><br>5.<br>点击完“将通道作为选区载入”后，PS就自动选择了图片中浅色的部分<br>但是我们要去除图中深色的部分<br>所以点击“反选”<br><img src="/2018/12/22/psimage3/q6.jpg" alt="test"><br>6.<br>“反选”后，再按下“Delete”键<br>就把深色的地方消除啦~<br>（虽然看上去有点奇怪）<br><img src="/2018/12/22/psimage3/q7.jpg" alt="test"><br>7.<br>然而，其实这样子并没有完全消除灰色的部分<br>所以，最后找到“色阶”<br><img src="/2018/12/22/psimage3/q8.jpg" alt="test"><br>将“输出色阶”一开始在左边的黑色小三角拉到右边<br><img src="/2018/12/22/psimage3/q9.jpg" alt="test"><br>这样就大功告成啦，别忘了用.PNG格式保存哦</p>
 <p>进阶：<br>如何抠出方形区域<br>1.按照之前的步骤制作好图片<br>将制作好的图片拷贝一份，再在最底层加上黑色的背景<br><img src="/2018/12/22/psimage3/q10.jpg" alt="test"><br>2.将拷贝图和黑色背景合并在一起，此时显示的是原图在贴吧上打开的效果<br><img src="/2018/12/22/psimage3/q11.jpg" alt="test"><br>3.选择你想要保留的区域<br><img src="/2018/12/22/psimage3/q12.jpg" alt="test"><br>4.在新图层将你所选择的区域粘贴<br><img src="/2018/12/22/psimage3/q13.jpg" alt="test"><br>……接下来大家都懂啦</p>
 
-  </section>
+    </div>
+</div>
 
-  <section class="post-comments">
+<div class="cube-article-nav">
+    <ul>
+        
+        <li class="prev">
+            <a href="/2018/12/22/psimage4/">
+                <i class="cube-icon cube-prev" aria-hidden="true"></i>
+                【教程】点开就变的图片简单的制作方法(5)
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2018/12/21/psimage2/">
+                【教程】点开就变的图片简单的制作方法(3)
+                <i class="cube-icon cube-next" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+</div>
 
-    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+
+<!-- TODO 根据theme.comment的内容进行入口选择 -->
+
+
+
+        </div>
+        <div class="cube-right">
+            
+
+<div class="cube-search cube-sidebar" id="cube-search">
+    <div class="search-container">
+        <input type="text" placeholder="搜索" class="cube-search-input" id="cube-search-input">
+        <i class="cube-icon cube-icon-search cube-search-submit" aria-hidden="true"></i>
+    </div>
+    <!-- TODO 通过给window赋一个全局变量，通过脚本赋值 -->
+</div>
+<script>
+    (function (window) {
+        'use strict';
+        window.searchModule = {}
+        window.searchModule.JSONUrl = '/content.json'
+        window.searchModule.rootUrl = '/'
+    })(window)
+</script>
+<div class="cube-search-form">
+    <div class="cube-search-control">
+        <input type="text" placeholder="搜索" class="search-input">
+        <a class="close-button">
+            <i class="cube-icon cube-close" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="cube-search-result"></div>
+</div>
+
+
+<div class="cube-author cube-sidebar" id="cube-author">
     
-</section>
-
-
-</article>
-
-
-            <footer class="footer">
-
-    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
     
-</footer>
+    <span>Aaliyah</span>
+    
+    
+    <div class="count">
+        <a class="count articles"><span>12</span>文章</a>
+        <a class="count tags"><span>7</span>标签</a>
+        <a class="count categories"><span>4</span>分类</a>
+    </div>
+</div>
+
+
+
+<div class="cube-music cube-sidebar" id="cube-music">
+    <div class="cube-player aplayer" id="cube-player"></div>
+</div>
+<script>
+    (function (window) {
+        window.musicModule = {}
+        window.musicModule.musicConfig = '{"narrow":false,"autoplay":false,"showlrc":3,"theme":"#b7daff","mutex":true,"mode":"circulation","preload":"auto","listmaxheight":"513px","music":[{"title":"Dear friends","author":"TRIPLANE","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/TRIPLANE - Dear friends.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Dear friends - TRIPLANE.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/TRIPLANE - Dear friends.jpg"},{"title":"Butter-Fly","author":"和田光司","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/和田光司 - Butter-Fly (ピアノヴァージョン).mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Butter-Fly (ピアノヴァージョン) - 和田光司.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/和田光司 - Butter-Fly (ピアノヴァージョン).jpg"},{"title":"宵闇花火","author":"葉月ゆら","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/葉月ゆら - 宵闇花火.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/宵闇花火 - 葉月ゆら.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/葉月ゆら - 宵闇花火.jpg"}]}'
+        window.musicModule.lrcConfig = {
+            open: '开启歌词',
+            close: '关闭歌词'
+        }
+    })(window)
+</script>
+
+
+
+<div class="cube-recent-posts cube-sidebar" id="cube-recent-posts">
+    <div class="title">
+        <a>近期文章</a>
+    </div>
+    <ul class="list">
+        
+        
+        <li>
+            <!-- TODO 如果文章要显示图片，那么在front-matter上添加preview属性(url or path) -->
+            
+            <div class="normal">
+                <p class="index first">
+                    <span>1</span>
+                </p>
+                <p class="title">
+                    <a href="/2019/01/15/live2d/" title="live2d">live2d</a>
+                </p>
+            </div>
+            
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>2</span>
+                </p>
+                <p class="title">
+                    <a href="/2019/01/03/yjango/" title="如何让孩子爱上♂学习">如何让孩子爱上♂学习</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>3</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/12/22/GL-AI/" title="【简易教程】新一代线稿自动上色软件Style2Paint的搭建方法">【简易教程】新一代线稿自动上色软件Style2Paint的搭建方法</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>4</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/12/22/ylimage/" title="【原理】点开就变的图片原理分析">【原理】点开就变的图片原理分析</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>5</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/12/22/psimage4/" title="【教程】点开就变的图片简单的制作方法(5)">【教程】点开就变的图片简单的制作方法(5)</a>
+                </p>
+            </div>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+
+<div class="cube-categories cube-sidebar" id="cube-categories">
+    <div class="title">
+        <a href="/categories">分类</a>
+    </div>
+    <div class="cube-boxs">
+        
+        
+        <div class="cube-box ">
+            <a href="/categories/教程/">#教程</a>
+        </div>
+        
+        
+        <div class="cube-box ">
+            <a href="/categories/色图/">#色图</a>
+        </div>
+        
+        
+        <div class="cube-box ">
+            <a href="/categories/科普/">#科普</a>
+        </div>
+        
+        
+        <div class="cube-box ">
+            <a href="/categories/Live2d/">#Live2d</a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="cube-tagcloud cube-sidebar" id="cube-tagcloud">
+    <div class="title">
+        <a href="/tags">标签云</a>
+    </div>
+    <div class="cube-boxs">
+        
+        
+        <div class="cube-box ">
+            <a href="/tags/AI自动上色-卷积神经网络/">#-AI自动上色 -卷积神经网络</a>
+        </div>
+        
+        
+        <div class="cube-box ">
+            <a href="/tags/图片点击变化-幻影坦克-开车方法/">#-图片点击变化 -幻影坦克 -开车方法</a>
+        </div>
+        
+        
+        <div class="cube-box ">
+            <a href="/tags/色图time/">#-色图time</a>
+        </div>
+        
+        
+        <div class="cube-box-bg ">
+            <a href="/tags/图片点击变化-幻影坦克-开车方法-手机PS/">#-图片点击变化 -幻影坦克 -开车方法 -手机PS</a>
+        </div>
+        
+        
+        <div class="cube-box ">
+            <a href="/tags/学习观-生理模型/">#-学习观 -生理模型</a>
+        </div>
+        
+        
+        <div class="cube-box-bg ">
+            <a href="/tags/图片点击变化-幻影坦克-原理分析/">#-图片点击变化 -幻影坦克 -原理分析</a>
+        </div>
+        
+        
+        <div class="cube-box ">
+            <a href="/tags/原理分析-live2D/">#-原理分析 -live2D</a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="cube-links cube-sidebar" id="cube-links">
+    <div class="title">
+        <a>个人链接</a>
+    </div>
+    <ul class="list">
+        
+        <li>
+            
+            
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/GitHub.png">
+            
+            <a href="https://github.com/" target="_blank">GitHub</a>
+        </li>
+        
+        <li>
+            
+            
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/Coding.png">
+            
+            <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+        </li>
+        
+        <li>
+            
+            
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/SF.png">
+            
+            <a href="https://segmentfault.com/u/aonosora" target="_blank">SF社区</a>
+        </li>
+        
+        <li>
+            
+            
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/开发者头条.png">
+            
+            <a href="https://toutiao.io/u/148070" target="_blank">开发者头条</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+<div class="cube-friend-links cube-sidebar" id="cube-friend-links">
+    <div class="title">
+        <a>友情链接</a>
+    </div>
+    <ul class="list">
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="https://kurumi.ink/images/tx.jpg">
+            <a href="https://www.kurumi.ink/" target="_blank">kurumi</a>
+        </li>
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/micblo.png">
+            <a href="https://blog.micblo.com/" target="_blank">罗大佬</a>
+        </li>
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/DIYgod.jpg">
+            <a href="https://www.anotherhome.net/" target="_blank">DIYgod</a>
+        </li>
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="/images/friend_links.jpg ">
+            <a href="https://aonosora.com/" target="_blank">咪西西の部落格</a>
+        </li>
+        
+    </ul>
+</div>
+
+
         </div>
     </div>
-
-    <!-- js files -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/scale.fix.js"></script>
+</div>
+<footer class="cube-footer">
+		<link rel="stylesheet" href="/live2d/css/live2d.css" />
+			<div id="landlord">
+			<div class="message" style="opacity:0"></div>
+			<canvas id="live2d" width="300" height="400" class="live2d"></canvas>
+			<div class="hide-button">隐藏</div>
+			</div>
+			<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+			<script type="text/javascript">
+			var message_Path = '/live2d/'
+			var home_Path = 'https://www.rua.kim/'
+			</script>
+			<script type="text/javascript" src="/live2d/js/live2d.js"></script>
+			<script type="text/javascript" src="/live2d/js/message.js"></script>
+			<script type="text/javascript">
+			loadlive2d("live2d", "/live2d/model/SaberLily/ylia02.model.json");
+		</script>
     
+© 2017 Aaliyah
 
-    
-
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript"> 
-        $(document).ready(function(){
-            MathJax.Hub.Config({ 
-                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
-            });
-        });
-    </script>
-
-
-    
-
-    <script src="/js/awesome-toc.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.awesome_toc({
-                overlay: true,
-                contentId: "post-content",
-            });
-        });
-    </script>
-
-
-    
-    
-    <!--kill ie6 -->
-<!--[if IE 6]>
-  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
-<![endif]-->
-
+<br>
+Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+</footer>
+<!-- inject:script -->
+<script src="/js/script.js"></script>
+<!-- endinject -->
+<div class="cube-loading out"></div>
 </body>
 </html>
