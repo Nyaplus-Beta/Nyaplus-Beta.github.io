@@ -1,549 +1,365 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    
+
 <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Aaliyah">
-    
-    
-    
-    
-    
-    
+    <meta charset="utf-8">
+    <meta name="keywords" content="艾莉雅哒笔记">
+    <meta name="description" content="艾莉雅哒笔记">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>艾莉雅哒笔记</title>
-    <!-- inject:style -->
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <!-- endinject -->
-    <style>
-        .cube-loading {
-            top: 0;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: url('/images/lg/loading.gif') no-repeat center center;
-            background-color: rgba(0,0,0,.7);
-        }
+    <link rel="icon" type="image/png" href="/favicon.png">
 
-        .cube-loading.out {
-            display: none;
-        }
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-        .cube-loading:before {
-            display: block;
-            content: '加载中';
-            position: relative;
-            width: 100%;
-            top: 50%;
-            right: -50%;
-            color: #fff;
-        }
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+</head>
 
-        @media(max-width: 768px) {
-            .cube-loading:before {
-                font-size: 1.2em;
-                transform: translate(-24px,20px);
-                -webkit-transform: translate(-24px,20px);
-                -o-transform: translate(-24px,20px);
-                -ms-transform: translate(-24px,20px);
-            }
-        }
+</head>
 
-        @media(min-width: 768px) {
-            .cube-loading:before {
-
-            }
-        }
-    </style>
-    
-</head></html>
 <body>
-<div class="cube-body">
-    <nav id="cube-top-memu" class="cube-menu">
-    <ul class="cube-menu-collapse">
-        
-        <li>
-            <i class="cube-icon cube-icon-home" aria-hidden="true"></i>
-            <a href="/">首页</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-archive" aria-hidden="true"></i>
-            <a href="/archives">归档</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-categories" aria-hidden="true"></i>
-            <a href="/categories">分类</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-tags" aria-hidden="true"></i>
-            <a href="/tags">标签</a>
-        </li>
-        
-        <li>
-            <i class="cube-icon cube-icon-about" aria-hidden="true"></i>
-            <a href="/about-me">关于我</a>
-        </li>
-        
-    </ul>
-</nav>
-<nav class="cube-side-menu" id="cube-side-menu">
-    <ul class="cube-menu-list">
-        
-        <li>
-            <a class="lrc-control">开启歌词</a>
-        </li>
-        
-        <li>
-            <a class="scroll-to-top">回到顶部</a>
-        </li>
-    </ul>
-</nav>
-    <header class="cube-header" id="cube-header">
-    <img src=" http://cube-1252774894.cosgz.myqcloud.com/background.png " alt="头部背景图片">
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="container">
+            <div class="nav-wrapper">
+                <div class="brand-logo">
+                    <a href="/" class="waves-effect waves-light">
+                        
+                        <img src="/medias/logo.png" class="logo-img hide-on-small-only">
+                        
+                        <span class="logo-span">艾莉雅哒笔记</span>
+                    </a>
+                </div>
+                
+<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="300" height="50" src="//music.163.com/outchain/player?type=2&id=39295382&auto=0&height=32"></iframe>
     
-    <div class="cube-type">
-        <span class="cube-typed-title">艾莉雅の笔记</span>
-        <span class="cube-typed-cursor">|</span>
-    </div>
-    
-</header>
-
-    <style>
-        nav.cube-menu:before {
-            content: '';
-            visibility: hidden;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 44px;
-        
-            filter: blur(5px);
-            -webkit-filter: blur(5px);
-        
-            z-index: -1;
-            background-image: url('/images/../../images/bg.jpg');
-            background-repeat: no-repeat;
-            background-position: center -6px;
-            background-size: cover;
-            background-color: transparent;
-        }
-
-        header.cube-background.cube-header-background {
-            visibility: hidden;
-            background-image: url('/images/../../images/bg.jpg');
-            background-position: center -50px;
-        }
-    </style>
-    <header class="cube-background cube-header-background">
-        
-        <div class="cube-type">
-            <span class="cube-typed-title">艾莉雅の笔记</span>
-            <span class="cube-typed-cursor">|</span>
-        </div>
-        
-    </header>
-    <div class="load-header-background"></div>
-    <script>
-        (function (window) {
-
-            window.headerModule = {}
-            window.headerModule.image = {
-                width: '2000',
-                height: '1414'
-            }
-
-        })(window)
-    </script>
-    
-    <div class="cube-content">
-        <div class="cube-left">
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
             
-<div class="cube-excerpt" id="cube-excerpt-test">
-    <header class="cube-excerpt-header">
-        <h1><a href="/2018/12/11/test/">test</a></h1>
-        <div class="cube-excerpt-header-msg">
-            <div class="cube-excerpt-date">
-                <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
-                2018-12-11
-            </div>
-            <div class="cube-excerpt-tags">
-                <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
-                
-                <a href="/tags/色图time/" class="cube-excerpt-tag-link">#-色图time</a>
-                
-            </div>
-        </div>
-    </header>
-    <article class="cube-excerpt-entry cube-markdown">
-        
-        
-           <p><img src="/2018/12/11/test/pr.jpg" alt="色图.jpg"><br></p>
-        
-    </article>
-    <footer class="cube-excerpt-footer">
-        <a class="cube-excerpt-more" href="/2018/12/11/test/">阅读全文</a>
-    </footer>
-</div>
-
-<div class="cube-excerpt" id="cube-excerpt-酱紫吗">
-    <header class="cube-excerpt-header">
-        <h1><a href="/2018/12/07/酱紫吗/">酱紫吗</a></h1>
-        <div class="cube-excerpt-header-msg">
-            <div class="cube-excerpt-date">
-                <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
-                2018-12-07
-            </div>
-            <div class="cube-excerpt-tags">
-                <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
-                
-            </div>
-        </div>
-    </header>
-    <article class="cube-excerpt-entry cube-markdown">
-        
-        
-           <h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><h2 id="标题。。算了"><a href="#标题。。算了" class="headerlink" title="标题。。算了"></a>标题。。算了</h2><h2 id="我看你是在刁难我"><a href="#我看你是在刁难我" class="headerlink" title="我看你是在刁难我"></a>我看你是在刁难我</h2>
-        
-    </article>
-    <footer class="cube-excerpt-footer">
-        <a class="cube-excerpt-more" href="/2018/12/07/酱紫吗/">阅读全文</a>
-    </footer>
-</div>
-
-
-
-<ul class="cube-pagination cube-pagination-6">
-    
-    <li class="cube-pagination-prev">
-        <a href="/">« 上一页</a>
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
     </li>
     
-    
-        
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
             
-            <li class="cube-pagination-index">
-                <a href="/">1</a>
-            </li>
+            <i class="fa fa-tags"></i>
             
-        
-            
-            <li class="cube-pagination-index disabled">
-                <span>2</span>
-            </li>
-            
-        
-    
-
-    
-    <li class="cube-pagination-next disabled">
-        <span>下一页 »</span>
+            <span>标签</span>
+        </a>
     </li>
     
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a id="toggleSearch" class="waves-effect waves-light">
+            <i id="searchIcon" class="mdi-action-search"></i>
+        </a>
+    </li>
+
 </ul>
 
-<!--其他组件后续添加-->
-        </div>
-        <div class="cube-right">
-            
+<div class="side-nav" id="mobile-nav">
 
-<div class="cube-search cube-sidebar" id="cube-search">
-    <div class="search-container">
-        <input type="text" placeholder="搜索" class="cube-search-input" id="cube-search-input">
-        <i class="cube-icon cube-icon-search cube-search-submit" aria-hidden="true"></i>
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">艾莉雅哒笔记</div>
+        <div class="logo-desc">
+            
+            记录一些杂七杂八的东西
+            
+        </div>
     </div>
-    <!-- TODO 通过给window赋一个全局变量，通过脚本赋值 -->
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        
+    </ul>
+
+    <div class="social-link"><a href="https://github.com/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <i class="fa fa-github"></i>
+</a>
+<a href="mailto:99414829@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <i class="fa fa-envelope-open"></i>
+</a>
+<a href="http://wpa.qq.com/msgrd?v=3&uin=995414829&site=qq&menu=yes" class="tooltipped" data-tooltip="QQ联系我: 995414829" data-position="top" data-delay="50">
+    <i class="fa fa-qq"></i>
+</a>
 </div>
+</div>
+
+            </div>
+        </div>
+
+        
+    </nav>
+</header>
+
+<style type="text/css">
+    /* don't remove. */
+    .index-cover {
+        height: 100vh;
+    }
+</style>
+
+<div class="bg-cover  about-cover" style="background-image: url('/medias/cover.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+                <div class="brand">
+                    <div class="title center-align">
+                    
+                        (/≧▽≦/)
+                    
+                    </div>
+
+                    <div class="description center-align">
+                    
+                        记录一些杂七杂八的东西
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
 <script>
-    (function (window) {
-        'use strict';
-        window.searchModule = {}
-        window.searchModule.JSONUrl = '/content.json'
-        window.searchModule.rootUrl = '/'
-    })(window)
-</script>
-<div class="cube-search-form">
-    <div class="cube-search-control">
-        <input type="text" placeholder="搜索" class="search-input">
-        <a class="close-button">
-            <i class="cube-icon cube-close" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div class="cube-search-result"></div>
-</div>
-
-
-<div class="cube-author cube-sidebar" id="cube-author">
-    
-    
-    <span>Aaliyah</span>
-    
-    
-    <div class="count">
-        <a class="count articles"><span>12</span>文章</a>
-        <a class="count tags"><span>7</span>标签</a>
-        <a class="count categories"><span>4</span>分类</a>
-    </div>
-</div>
-
-
-
-<div class="cube-music cube-sidebar" id="cube-music">
-    <div class="cube-player aplayer" id="cube-player"></div>
-</div>
-<script>
-    (function (window) {
-        window.musicModule = {}
-        window.musicModule.musicConfig = '{"narrow":false,"autoplay":false,"showlrc":3,"theme":"#b7daff","mutex":true,"mode":"circulation","preload":"auto","listmaxheight":"513px","music":[{"title":"Dear friends","author":"TRIPLANE","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/TRIPLANE - Dear friends.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Dear friends - TRIPLANE.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/TRIPLANE - Dear friends.jpg"},{"title":"Butter-Fly","author":"和田光司","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/和田光司 - Butter-Fly (ピアノヴァージョン).mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Butter-Fly (ピアノヴァージョン) - 和田光司.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/和田光司 - Butter-Fly (ピアノヴァージョン).jpg"},{"title":"宵闇花火","author":"葉月ゆら","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/葉月ゆら - 宵闇花火.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/宵闇花火 - 葉月ゆら.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/葉月ゆら - 宵闇花火.jpg"}]}'
-        window.musicModule.lrcConfig = {
-            open: '开启歌词',
-            close: '关闭歌词'
-        }
-    })(window)
+// Dynamically switch banner pictures every day.
+$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
+<main class="content">
 
+    
 
-<div class="cube-recent-posts cube-sidebar" id="cube-recent-posts">
-    <div class="title">
-        <a>近期文章</a>
+    <div id="recommend-sections">
+    
     </div>
-    <ul class="list">
-        
-        
-        <li>
-            <!-- TODO 如果文章要显示图片，那么在front-matter上添加preview属性(url or path) -->
+
+    
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
             
-            <div class="normal">
-                <p class="index first">
-                    <span>1</span>
-                </p>
-                <p class="title">
-                    <a href="/2019/01/15/live2d/" title="live2d">live2d</a>
-                </p>
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2018/12/07/jiang-zi-ma/">
+                        <div class="card-image">
+                            
+                            <img src="/images/pr.jpg" class="responsive-img" alt="酱紫吗">
+                            
+                            <span class="card-title">酱紫吗</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary">标题一标题二标题。。算了我看你是在刁难我色图在左边</div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-07
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/色图/" class="post-category" target="_blank">
+                                    色图
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/色图time/" target="_blank">
+                            <span class="chip bg-color">-色图time</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
             </div>
             
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>2</span>
-                </p>
-                <p class="title">
-                    <a href="/2019/01/03/yjango/" title="如何让孩子爱上♂学习">如何让孩子爱上♂学习</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>3</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/12/22/GL-AI/" title="【简易教程】新一代线稿自动上色软件Style2Paint的搭建方法">【简易教程】新一代线稿自动上色软件Style2Paint的搭建方法</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>4</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/12/22/ylimage/" title="【原理】点开就变的图片原理分析">【原理】点开就变的图片原理分析</a>
-                </p>
-            </div>
-        </li>
-        
-        
-        
-        <li>
-            <div class="normal">
-                <p class="index">
-                    <span>5</span>
-                </p>
-                <p class="title">
-                    <a href="/2018/12/22/psimage4/" title="【教程】点开就变的图片简单的制作方法(5)">【教程】点开就变的图片简单的制作方法(5)</a>
-                </p>
-            </div>
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-
-<div class="cube-categories cube-sidebar" id="cube-categories">
-    <div class="title">
-        <a href="/categories">分类</a>
-    </div>
-    <div class="cube-boxs">
-        
-        
-        <div class="cube-box ">
-            <a href="/categories/教程/">#教程</a>
         </div>
-        
-        
-        <div class="cube-box ">
-            <a href="/categories/色图/">#色图</a>
+    </article>
+
+</main>
+
+
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a href="/" class="left btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            
         </div>
-        
-        
-        <div class="cube-box ">
-            <a href="/categories/科普/">#科普</a>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">2 / 2</div>
         </div>
-        
-        
-        <div class="cube-box ">
-            <a href="/categories/Live2d/">#Live2d</a>
-        </div>
-        
-    </div>
-</div>
-
-
-
-<div class="cube-tagcloud cube-sidebar" id="cube-tagcloud">
-    <div class="title">
-        <a href="/tags">标签云</a>
-    </div>
-    <div class="cube-boxs">
-        
-        
-        <div class="cube-box-bg ">
-            <a href="/tags/AI自动上色-卷积神经网络/">#-AI自动上色 -卷积神经网络</a>
-        </div>
-        
-        
-        <div class="cube-box ">
-            <a href="/tags/图片点击变化-幻影坦克-开车方法/">#-图片点击变化 -幻影坦克 -开车方法</a>
-        </div>
-        
-        
-        <div class="cube-box ">
-            <a href="/tags/色图time/">#-色图time</a>
-        </div>
-        
-        
-        <div class="cube-box ">
-            <a href="/tags/图片点击变化-幻影坦克-开车方法-手机PS/">#-图片点击变化 -幻影坦克 -开车方法 -手机PS</a>
-        </div>
-        
-        
-        <div class="cube-box ">
-            <a href="/tags/学习观-生理模型/">#-学习观 -生理模型</a>
-        </div>
-        
-        
-        <div class="cube-box ">
-            <a href="/tags/图片点击变化-幻影坦克-原理分析/">#-图片点击变化 -幻影坦克 -原理分析</a>
-        </div>
-        
-        
-        <div class="cube-box ">
-            <a href="/tags/原理分析-live2D/">#-原理分析 -live2D</a>
-        </div>
-        
-    </div>
-</div>
-
-
-
-<div class="cube-links cube-sidebar" id="cube-links">
-    <div class="title">
-        <a>个人链接</a>
-    </div>
-    <ul class="list">
-        
-        <li>
+        <div class="col s6 m4 l4">
             
+            <a class="right btn-floating btn-large disabled">
+                <i class="fa fa-angle-right"></i>
+            </a>
             
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/GitHub.png">
-            
-            <a href="https://github.com/" target="_blank">GitHub</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/Coding.png">
-            
-            <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/SF.png">
-            
-            <a href="https://segmentfault.com/u/aonosora" target="_blank">SF社区</a>
-        </li>
-        
-        <li>
-            
-            
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/开发者头条.png">
-            
-            <a href="https://toutiao.io/u/148070" target="_blank">开发者头条</a>
-        </li>
-        
-    </ul>
-</div>
-
-
-
-<div class="cube-friend-links cube-sidebar" id="cube-friend-links">
-    <div class="title">
-        <a>友情链接</a>
-    </div>
-    <ul class="list">
-        
-        <li>
-            <!-- TODO change avatar.png to friend.png-->
-            <img src="https://kurumi.ink/images/tx.jpg">
-            <a href="https://www.kurumi.ink/" target="_blank">kurumi</a>
-        </li>
-        
-        <li>
-            <!-- TODO change avatar.png to friend.png-->
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/micblo.png">
-            <a href="https://blog.micblo.com/" target="_blank">罗大佬</a>
-        </li>
-        
-        <li>
-            <!-- TODO change avatar.png to friend.png-->
-            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/DIYgod.jpg">
-            <a href="https://www.anotherhome.net/" target="_blank">DIYgod</a>
-        </li>
-        
-        <li>
-            <!-- TODO change avatar.png to friend.png-->
-            <img src="/images/friend_links.jpg ">
-            <a href="https://aonosora.com/" target="_blank">咪西西の部落格</a>
-        </li>
-        
-    </ul>
-</div>
-
-
         </div>
     </div>
 </div>
-<footer class="cube-footer">
-		<link rel="stylesheet" href="/live2d/css/live2d.css" />
+
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
+            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+
+            
+			
+                <br>
+                <span id="busuanzi_container_site_pv">
+                    本站总访问量 <span id="busuanzi_value_site_pv" style="color: #fff;"></span> 次,&nbsp;
+                </span>
+				<span id="busuanzi_container_site_uv">
+                    访客数 <span id="busuanzi_value_site_uv" style="color: #fff;"></span> 人.
+                </span>
+			
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <i class="fa fa-github"></i>
+</a>
+<a href="mailto:99414829@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <i class="fa fa-envelope-open"></i>
+</a>
+<a href="http://wpa.qq.com/msgrd?v=3&uin=995414829&site=qq&menu=yes" class="tooltipped" data-tooltip="QQ联系我: 995414829" data-position="top" data-delay="50">
+    <i class="fa fa-qq"></i>
+</a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<link rel="stylesheet" href="/live2d/css/live2d.css" />
 			<div id="landlord">
 			<div class="message" style="opacity:0"></div>
 			<canvas id="live2d" width="300" height="400" class="live2d"></canvas>
@@ -559,15 +375,48 @@
 			<script type="text/javascript">
 			loadlive2d("live2d", "/live2d/model/SaberLily/ylia02.model.json");
 		</script>
-    
-© 2017 Aaliyah
 
-<br>
-Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
-</footer>
-<!-- inject:script -->
-<script src="/js/script.js"></script>
-<!-- endinject -->
-<div class="cube-loading out"></div>
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title">搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input" autofocus>
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/js/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
 </body>
 </html>
+<!--单击显示文字-->
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="\js\FunnyTitle.js"></script>
