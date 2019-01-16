@@ -5,10 +5,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="[原理] Live2D Cubism Moc 文件格式分析, 艾莉雅哒笔记">
-    <meta name="description" content="    偶尔在百度帖吧看到一篇技术向文章就转来了
-Live2D Cubism Moc 文件格式分析转载自百度贴吧https://tieba.baidu.com/p/2896971262
-Live2D Cubism Moc(*.moc)文件是">
+    <meta name="keywords" content="艾莉雅哒笔记">
+    <meta name="description" content="‘[原理] Live2D Cubism Moc 文件格式分析’    偶尔在百度帖吧看到一篇技术向文章就转来了
+Live2D Cubism Moc 文件格式分析转载自百度贴吧https://tieba.baidu.com/p/2896971">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +15,7 @@ Live2D Cubism Moc(*.moc)文件是">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>[原理] Live2D Cubism Moc 文件格式分析 | 艾莉雅哒笔记</title>
+    <title>艾莉雅哒笔记</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -217,7 +216,7 @@ Live2D Cubism Moc(*.moc)文件是">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        [原理] Live2D Cubism Moc 文件格式分析
+                        
                     </div>
                 </div>
             </div>
@@ -269,14 +268,14 @@ Live2D Cubism Moc(*.moc)文件是">
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p> <img src="/2018/12/12/yuan-li-live2d-cubism-moc-wen-jian-ge-shi-fen-xi/原理-Live2D-Cubism-Moc-文件格式分析/l2d.jpg" alt=" "><br> <a id="more"></a><br>  偶尔在百度帖吧看到一篇技术向文章就转来了</p>
+                <h1 id="‘-原理-Live2D-Cubism-Moc-文件格式分析’"><a href="#‘-原理-Live2D-Cubism-Moc-文件格式分析’" class="headerlink" title="‘[原理] Live2D Cubism Moc 文件格式分析’"></a>‘[原理] Live2D Cubism Moc 文件格式分析’</h1><p> <img src="/2018/12/12/live2dcubismmoc/l2d.jpg" alt=" "><br> <a id="more"></a><br>  偶尔在百度帖吧看到一篇技术向文章就转来了</p>
 <h1 id="Live2D-Cubism-Moc-文件格式分析"><a href="#Live2D-Cubism-Moc-文件格式分析" class="headerlink" title="Live2D Cubism Moc 文件格式分析"></a>Live2D Cubism Moc 文件格式分析</h1><p>转载自百度贴吧<a href="https://tieba.baidu.com/p/2896971262" target="_blank" rel="noopener">https://tieba.baidu.com/p/2896971262</a></p>
 <p>Live2D Cubism Moc(*.moc)文件是用于为CubismSDK提供绘制数据的文件格式。<br>这个文件包含了图层、参数、坐标系和组件，这四部分信息。<br>一个Moc文件和一个图像文件（用于存储纹理），在理论上就能够提供重现角色所需的全部信息（这里不包括动作动画）。<br>该文档介绍了Moc文件的数据组织形式和解析方法。要理解该文档，您可能需要具备一定的编程基础。</p>
-<p>1 概述<br><img src="/2018/12/12/yuan-li-live2d-cubism-moc-wen-jian-ge-shi-fen-xi/原理-Live2D-Cubism-Moc-文件格式分析/bae.jpg" alt="1"><br>图1 解析Moc文件所涉及的类的关系图</p>
+<p>1 概述<br><img src="/2018/12/12/live2dcubismmoc/bae.jpg" alt="1"><br>图1 解析Moc文件所涉及的类的关系图</p>
 <p>在我们的例子中，将使用一些面向对象的概念来解释Moc文件的结构。<br>这些类和Cubism SDK所涉及的类有一定的关联，但并不是等价的。</p>
 <p>Cubism SDK提供的封装好的类库来解析Moc文件，因此您可能无法通过引用了SDK的代码来了解Moc文件内部的组织情况。<br>本文档附带了一个代码例子重现了Moc文件的解析步骤。<br>这个例子仅仅用于展示Moc文件的数据内容，因此去除了原有SDK涉及的大多数设计模式，这么做的好处是减少代码量，降低阅读者的门槛。<br>现在，您只需要安装一个免费的Visual Studio 2013 for Windows Desktop软件就可以运行和调试程序代码。</p>
 <p>下图给出了本文档的类和SDK的类的部分关系，但仍然需要强调的是，不要用试图完全依靠本文档的概念来取代官方的SDK文档。</p>
-<p><img src="/2018/12/12/yuan-li-live2d-cubism-moc-wen-jian-ge-shi-fen-xi/原理-Live2D-Cubism-Moc-文件格式分析/aae.jpg" alt="1"><br>图2 本文档和CubismSDK在命名上的差异</p>
+<p><img src="/2018/12/12/live2dcubismmoc/aae.jpg" alt="1"><br>图2 本文档和CubismSDK在命名上的差异</p>
 <p>2 知识准备</p>
 <p>要分析Moc文件，您需要了解有关对象序列化的知识。<br>程序运行的状态以数据的形式存储在内存中，内存是随机访问的，因此数据的地址分布可能杂乱无章。<br>当我们需要永久保存这些数据，就需要将这些数据组织成字节序列，存入硬盘的文件。<br>而当我们需要恢复程序的运行状态，就需要把硬盘文件中的字节序列解码成内存中的数据结构，以便程序进行访问。<br>这种数据的转换过程被称为序列化和反序列化，它通常用于文件存储和网络数据传输。</p>
 <p>常见的序列化技术包括Xml序列化和Json序列化。<br>它们是开放标准，因此能够很容易地找到平台集成的或是开放源代码的类库，来简化序列化技术的应用。<br>然而Moc文件采用的是一种相对封闭的序列化方式，因此我们需要手工实现其各个对象的反序列化代码。</p>
@@ -336,7 +335,7 @@ Live2D Cubism Moc(*.moc)文件是">
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="https://www.rua.kim" class="b-link-green">艾莉雅哒笔记</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/12/yuan-li-live2d-cubism-moc-wen-jian-ge-shi-fen-xi/" class="b-link-green">[原理] Live2D Cubism Moc 文件格式分析</a>
+                    <a href="/2018/12/12/live2dcubismmoc/" class="b-link-green"></a>
                 </p>
             </div>
         </div>
