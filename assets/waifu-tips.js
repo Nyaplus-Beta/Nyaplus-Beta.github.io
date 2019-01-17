@@ -77,7 +77,7 @@ $('#talk').keydown(function(event) {
 });
 //************************************************************************
 
-var a_idx = 0;
+/* var a_idx = 0;
 jQuery(document).ready(function($) {
     $("body").click(function(e) {
         var a = new Array("+1s", "+1s", "+1s", "+1s", "+1s", "+1s", "+1s" ,"+1s", "+1s", "+1s", "+1s", "+1s");
@@ -103,7 +103,7 @@ jQuery(document).ready(function($) {
                 $i.remove();
             });
     });
-});
+}); */
 
 
 
@@ -140,7 +140,7 @@ $(document).on('copy', function (){
     showMessage('我看见你复制了,恩恩，熟练使用ctrl+c是程序员必备技能', 5000, true);
 });
 
-$('.waifu-tool .fui-home').click(function (){
+/* $('.waifu-tool .fui-home').click(function (){
     //window.location = 'https://www.fghrsh.net/';
     window.location = window.location.protocol+'//'+window.location.hostname+'/'
 });
@@ -172,7 +172,7 @@ $('.waifu-tool .fui-photo').click(function (){
     showMessage('偷偷下载我照片想干嘛？？？', 5000, true);
     window.Live2D.captureName = 'Pio.png';
     window.Live2D.captureFrame = true;
-});
+}); */
 
 (function (){
     var text;
@@ -240,7 +240,7 @@ $('.waifu-tool .fui-photo').click(function (){
     showMessage(msgg, 6000);
 })();
 
-//window.hitokotoTimer = window.setInterval(showHitokoto,30000);
+//window.hitokotoTimer = window.setInterval(showHitokoto,20000);
 /* 检测用户活动状态，并在空闲时 定时显示一言 */
 var getActed = false;
 window.hitokotoTimer = 0;
@@ -252,7 +252,7 @@ setInterval(function() { if (!getActed) ifActed(); else elseActed(); }, 1000);
 function ifActed() {
     if (!hitokotoInterval) {
         hitokotoInterval = true;
-        hitokotoTimer = window.setInterval(showHitokoto, 30000);
+        hitokotoTimer = window.setInterval(showHitokoto, 20000);
     }
 }
 
@@ -263,7 +263,7 @@ function elseActed() {
 
 function showHitokoto(){
 	/* 增加 hitokoto.cn API */
-    //$.getJSON('https://v1.hitokoto.cn',function(result){
+    /*$.getJSON('https://v1.hitokoto.cn',function(result){
         var text = '苟利国家生死以，岂因祸福避趋之';
         //text = text.render({source: result.from, creator: result.creator});
         showMessage(result.hitokoto, 5000);
@@ -353,7 +353,7 @@ function initModel(waifuPath){
     });
 }
 
-function loadModel(modelId, modelTexturesId){
+/* function loadModel(modelId, modelTexturesId){
     localStorage.setItem('modelId', modelId);
     if (modelTexturesId === undefined) modelTexturesId = 0;
     localStorage.setItem('modelTexturesId', modelTexturesId);
@@ -395,4 +395,4 @@ function loadOtherModel(){
             showMessage(result.model['message'], 3000, true);
         }
     });
-}
+} */
