@@ -166,7 +166,8 @@ mark {
 }
 
 .text-color {
-    color: #0f9d58 !important;
+    color: #0f9d58
+    !important;
 }
 
 /*头部导航栏样式*/
@@ -380,7 +381,7 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 1rem;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 1.85em;
     margin-bottom: 20px;
@@ -396,6 +397,7 @@ header .go-back i {
 
 .bg-cover .post-title {
     font-size: 1rem;
+	opacity: 0.0;
 }
 
 @-webkit-keyframes rainbow {
@@ -1382,7 +1384,7 @@ table tr:nth-child(2n), thead {
 .my-projects .title,
 .my-skills .title,
 .my-gallery .title {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 2.25rem;
 }
 
