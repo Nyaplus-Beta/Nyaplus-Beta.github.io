@@ -208,10 +208,7 @@
 
             </div>
         </div>
-			<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="stylesheet" type="text/css" href="assets/waifu.css">
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-
+			
         
     </nav>
 </header>
@@ -380,17 +377,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <div class="progress-bar"></div>
 
 
-<input placeholder="和她聊天" id="talk"/>
-<form id="uploadForm">
-    <input type="file" name="file"/>
-</form>
-<div class="waifu">
-    <div class="waifu-tips"></div>
-    <canvas id="live2d" width="320" height="280" class="live2d"></canvas>
-</div>
-<script src="assets/waifu-tips.js"></script>
-<script src="assets/live2d.js"></script>
-<script type="text/javascript">initModel("assets/")</script>
 
 <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
@@ -429,6 +415,24 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
 
+
+<input placeholder="和她聊天" id="talk"/>
+<form id="uploadForm">
+    <input type="file" name="file"/>
+</form>
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="300" height="400" class="live2d"></canvas>
+</div>
+<script type="text/javascript">
+			var message_Path = '/assets/'
+			var home_Path = 'https://www.rua.kim/'
+			</script>
+<script src="assets/waifu-tips.js"></script>
+<script src="assets/live2d.js"></script>
+<script type="text/javascript">
+	loadlive2d("live2d", "/assets/model/SaberLily/ylia02.model.json");
+</script>
 
 </body>
 

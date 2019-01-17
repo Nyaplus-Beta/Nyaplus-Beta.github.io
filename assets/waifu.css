@@ -16,8 +16,8 @@ hr{
 #talk{
     position: fixed;
     width: 150px ;height:25px;
-    bottom: 60px;
-    left: 320px;
+    bottom: 230px;
+    left: 230px;
     z-index: 10001;
     transition: all .3s ease-in-out;
     -webkit-transform: translateY(3px);
@@ -27,8 +27,8 @@ hr{
 #uploadForm{
     position: fixed;
     width: 50px ;height:25px;
-    bottom: 130px;
-    left: 320px;
+    bottom: 300px;
+    left: 230px;
     z-index: 10001;
     transition: all .3s ease-in-out;
     -webkit-transform: translateY(3px);
@@ -58,7 +58,7 @@ hr{
     opacity: 0;
     width: 250px;
     height: 100px;
-    margin: -70px 20px;
+    margin: -130px 30px;
     padding: 10px 10px;
     border: 1px solid rgba(224, 186, 140, 0.62);
     border-radius: 12px;
