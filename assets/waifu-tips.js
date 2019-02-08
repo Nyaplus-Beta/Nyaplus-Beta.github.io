@@ -7,8 +7,8 @@ function doUpload() {
     }
     var formData = new FormData($("#uploadForm")[0])
     $.ajax({
-        url: 'http://openapi.tuling123.com/openapi/api/v2',
-        type: 'image',
+        url: '/ai/pic',
+        type: 'POST',
         data: formData,
         dataType: 'json',
         async: false,
@@ -44,11 +44,11 @@ function add() {
 
     if(text.length>0){
     $.ajax({
-        url: "http://openapi.tuling123.com/openapi/api/v2",//接口地址
+        url: "/chat",//接口地址
         type: "post",
         dataType: "json",
         data: {
-            key: "fef0c701b0d74c4c9eb1a277749e3a54",//APIKey
+            key: "03ad06ed6ea3409088755f3b60740227",//APIKey
             info: text//用户文本
         },
         success: function (data, status) {
@@ -61,7 +61,7 @@ function add() {
             }
         },
         error:function(){
-            showMessage("还在施工中,暂时无法回复", 6000);
+            showMessage("无法接收请求，网络出现问题", 6000);
         }
     });
     }
