@@ -8,9 +8,21 @@
       <link href="/2019/02/11/videotest/"/>
       <url>/2019/02/11/videotest/</url>
       
-        <content type="html"><![CDATA[<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"https://1fgqfmy.oloadcdn.net/dl/l/gWpIHP2FRsa8v-vF/R5p5x9H0xhY/1547272571_4z7k7UDezFy5vzRM_Source.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+        <content type="html"><![CDATA[<h2 id="测试了Dplayer的兼容性-还不错-很好非常棒"><a href="#测试了Dplayer的兼容性-还不错-很好非常棒" class="headerlink" title="测试了Dplayer的兼容性 还不错 很好非常棒~"></a>测试了Dplayer的兼容性 还不错 很好非常棒~</h2><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"https://1fgqfmy.oloadcdn.net/dl/l/gWpIHP2FRsa8v-vF/R5p5x9H0xhY/1547272571_4z7k7UDezFy5vzRM_Source.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
       
       
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -视频 </tag>
+            
+        </tags>
       
     </entry>
     
