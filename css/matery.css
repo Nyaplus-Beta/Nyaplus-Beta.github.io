@@ -28,12 +28,12 @@
 }
 
 body {
-    background-image: url(../images/bg.jpg);
+    background-image: url(https://i.loli.net/2019/02/15/5c66379086ae3.jpg);
     background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center;
 	background-size: cover;
-    margin:0;
+    margin:0 auto;
     color: #34495e;
 }
 
@@ -509,16 +509,33 @@ header .go-back i {
     margin-top: -40px;
 }
 
-.music {
-    margin-bottom: 30px !important;
+.dream {
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.notice {
-    margin-top: -40px;
+.dream .title,
+.music-player .title,
+.video-player .title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-.notice .card {
-    border-radius: 5px;
+.dream .text {
+    opacity: .6;
+    font-size: 1.1rem;
+}
+
+.music-player,
+.video-player {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.music,
+.dplayer-video {
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 10px 20px -12px rgba(0,0,0,.5) !important;
 }
 
 #recommend-sections {
@@ -531,11 +548,6 @@ header .go-back i {
 }
 
 @media only screen and (min-width: 1418px) {
-    .notice {
-        margin-top: 30px;
-        padding: 0 0.75rem;
-    }
-
     .recommend {
         margin-top: 20px;
         padding: 0 0.75rem;
