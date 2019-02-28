@@ -1,0 +1,641 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo的matery主题魔改折腾笔记, 艾莉雅哒笔记">
+    <meta name="description" content="《Hexo的matery主题魔改折腾笔记》原主题github地址
+
+魔改记录1. 修改首页bg-cover删除颜色渐变效果。修改具体属性 将主题目录下的layout_partial文件夹内的index-cover.ejs的1&amp;lt;div ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Hexo的matery主题魔改折腾笔记 | 艾莉雅哒笔记</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+</head>
+
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://i.loli.net/2019/02/15/5c667be0de38e.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">艾莉雅哒笔记</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://i.loli.net/2019/02/15/5c667be0de38e.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">艾莉雅哒笔记</div>
+        <div class="logo-desc">
+            
+            ✡
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+
+
+
+
+<div class="bg-covers pd-header post-cover" style="background-image: url('/images/')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <!-- <div class="description center-align post-title">
+                        Hexo的matery主题魔改折腾笔记
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/魔改/" target="_blank">
+                                <span class="chip bg-color">-魔改</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/笔记/" class="post-category" target="_blank">
+                                笔记
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-02-26
+                </div>
+
+                
+				
+				
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="《Hexo的matery主题魔改折腾笔记》"><a href="#《Hexo的matery主题魔改折腾笔记》" class="headerlink" title="《Hexo的matery主题魔改折腾笔记》"></a>《Hexo的matery主题魔改折腾笔记》</h1><p><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">原主题github地址</a></p>
+<hr>
+<h2 id="魔改记录1-修改首页bg-cover删除颜色渐变效果。"><a href="#魔改记录1-修改首页bg-cover删除颜色渐变效果。" class="headerlink" title="魔改记录1. 修改首页bg-cover删除颜色渐变效果。"></a>魔改记录1. 修改首页bg-cover删除颜色渐变效果。</h2><p>修改具体属性 将主题目录下的layout_partial文件夹内的index-cover.ejs的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;carousel-item red white-text bg-cover about-cover&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>修改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;carousel-item white-text bg-cover about-cover&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>删除一个red 属性 无默认图片就会显示为网页背景<br>删除颜色渐变的bg-cover并且自定义网页背景主题目录\source\css\matery.css<br>修改body属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background-color: #eaeaea;</span><br><span class="line">    margin: 0;</span><br><span class="line">    color: #34495e;</span><br><span class="line">修改为</span><br><span class="line">body &#123;</span><br><span class="line">    background-image: 自定义地址</span><br><span class="line">    background-repeat:no-repeat;</span><br><span class="line">	background-attachment:fixed;</span><br><span class="line">	background-position:center;</span><br><span class="line">	background-size: cover;</span><br><span class="line">    margin:0 auto;</span><br><span class="line">注释掉的属性</span><br><span class="line">	@-webkit-keyframes rainbow</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="魔改记录2-修改文章背景图为卡片背景图"><a href="#魔改记录2-修改文章背景图为卡片背景图" class="headerlink" title="魔改记录2. 修改文章背景图为卡片背景图"></a>魔改记录2. 修改文章背景图为卡片背景图</h2><p>文章标题卡片位置会变化 不好调整位置 写文章的时候在正文也写一个标题<br>删除原有标题在bg里<br>layout_partial\post-cover.ejs<br>注释<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- &lt;div class=&quot;description center-align post-title&quot;&gt;</span><br><span class="line">	&lt;%= page.title %&gt;</span><br><span class="line">&lt;/div&gt; --&gt;</span><br></pre></td></tr></table></figure></p>
+<p>在matery.css里添加属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">.bg-covers &#123;</span><br><span class="line">    position: fixed;</span><br><span class="line">    display: flex;</span><br><span class="line">    align-items: center;</span><br><span class="line">    padding: 0;</span><br><span class="line">    margin-top: -64px;</span><br><span class="line">    border: 0;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">    background-position: center center;</span><br><span class="line">    background-size: 100% 120%; #看图片调整比例</span><br><span class="line">    transform: translate3d(0px, 0px, 0px);</span><br><span class="line">	width:100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">卡片背景</span><br><span class="line">.post-cover &#123;</span><br><span class="line">    height: 40vh !important;</span><br><span class="line">&#125;</span><br><span class="line">修改为</span><br><span class="line">.post-cover &#123;</span><br><span class="line">    height: 100vh !important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>调整卡片位置<br>直接在\source\css\matery.css<br>.card里增加一个top属性<br>top:8vh;<br>还有底部footer位置也要调整<br>属性在source\libs\materialize目录下的materialize.min.css<br>.page-footer属性内增加一个margin-top:9vh;</p>
+<h2 id="魔改记录3-修改首页卡片背景透明度"><a href="#魔改记录3-修改首页卡片背景透明度" class="headerlink" title="魔改记录3. 修改首页卡片背景透明度"></a>魔改记录3. 修改首页卡片背景透明度</h2><p>修改source\libs\materialize目录下的materialize.min.css<br>card的background-color:属性查找.card<br>把卡片默认背景#FFF改为rgba(255, 255, 255, .8)<br>card的action属性查找.card .card-action<br><code>background-color: inherit</code><br>修改为<br><code>background-color: rgba(255, 255, 255, .0)</code></p>
+<h2 id="魔改记录4-修改卡片背景上的文字为隐藏"><a href="#魔改记录4-修改卡片背景上的文字为隐藏" class="headerlink" title="魔改记录4. 修改卡片背景上的文字为隐藏"></a>魔改记录4. 修改卡片背景上的文字为隐藏</h2><p>因为修改css太麻烦索性不要这个卡片标题了不影响检索<br>直接在index.ejs注释掉<br><code>&lt;!-- &lt;span class=&quot;card-title&quot;&gt;&lt;%- post.title %&gt;&lt;/span&gt; --&gt;</code></p>
+<h2 id="魔改记录4-修改文章全部跳转"><a href="#魔改记录4-修改文章全部跳转" class="headerlink" title="魔改记录4. 修改文章全部跳转"></a>魔改记录4. 修改文章全部跳转</h2><p>因为主题暂时不支持pjax 所以文章跳转到新标签<br>在index.ejs里的a标签添加了一个target=”_blank”_blank属性<br><code>&lt;a target=&quot;_blank&quot; href=&quot;&lt;%- url_for(post.path) %&gt;&quot;&gt;</code></p>
+<h2 id="魔改记录5-在首页放一张动态图片"><a href="#魔改记录5-在首页放一张动态图片" class="headerlink" title="魔改记录5. 在首页放一张动态图片"></a>魔改记录5. 在首页放一张动态图片</h2><p>需要开启主题配置文件显示梦想语句<br>修改\layout_widget下的dream.ejs</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.dream.showTitle) &#123; %&gt;</span><br><span class="line">	&lt;div class=&quot;title center-align&quot;&gt;</span><br><span class="line">		&lt;i class=&quot;fa fa-lightbulb-o&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;%- theme.dream.title %&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;div style=&quot;width:250px; position:relative; margin:0 auto;&quot;&gt; #丢在标题下面 调整好位置</span><br><span class="line">		&lt;img src=&quot;#&quot;&gt; #改为自己的图片地址</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="魔改记录6-首页开启第二个按钮之后点击之后的颜色变化修改"><a href="#魔改记录6-首页开启第二个按钮之后点击之后的颜色变化修改" class="headerlink" title="魔改记录6 首页开启第二个按钮之后点击之后的颜色变化修改"></a>魔改记录6 首页开启第二个按钮之后点击之后的颜色变化修改</h2><p>source\libs\materialize目录下的materialize.min.css<br>修改<code>.btn:focus,.btn-large:focus,.btn-small:focus,.btn-floating:focus</code>属性内的<br><code>background-color:#1d7d74</code></p>
+<h2 id="魔改记录7-修改首页轮播图标题位置阅读更多按钮位置调整"><a href="#魔改记录7-修改首页轮播图标题位置阅读更多按钮位置调整" class="headerlink" title="魔改记录7. 修改首页轮播图标题位置阅读更多按钮位置调整"></a>魔改记录7. 修改首页轮播图标题位置阅读更多按钮位置调整</h2><p>文章标题和根目录yml的subtitle属性一样<br>\source\css\matery.css<br><code>.bg-cover .title</code>内增加一个<code>top</code>调整290px<br>按钮属性<code>.carousel-post .cover-btns</code>内增加一个<code>top</code>调整270px<br>在<code>.bg-cover .description</code>内增加<br><code>position: relative;top: 300px;</code><br>具体参数参考<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">.bg-cover .title &#123;</span><br><span class="line">    font-size: 3rem;</span><br><span class="line">    font-weight: 700;</span><br><span class="line">    line-height: 1.85em;</span><br><span class="line">	top: 270px;</span><br><span class="line">    margin-bottom: 10px;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.bg-cover .description &#123;</span><br><span class="line">    font-size: 1.25rem;</span><br><span class="line">    font-weight: 300;</span><br><span class="line">    line-height: 1.4em;</span><br><span class="line">    color: #fff;</span><br><span class="line">	position: relative;</span><br><span class="line">	top: 270px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+            </div>
+            <hr>
+
+            
+            <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.88rem;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-large waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fa fa-close"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            <div class="reprint">
+                <p>
+                    <span class="reprint-tip">
+                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
+                    </span>
+                    <a href="https://rua.kim" class="b-link-green">艾莉雅哒笔记</a>
+                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                    <a href="/2019/02/26/mogai/" class="b-link-green">Hexo的matery主题魔改折腾笔记</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/02/26/mogai/">
+                    <div class="card-image">
+                        
+                        <img src="/images/" class="responsive-img" alt="Hexo的matery主题魔改折腾笔记">
+                        
+                        <span class="card-title">Hexo的matery主题魔改折腾笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">《Hexo的matery主题魔改折腾笔记》原主题github地址
+
+魔改记录1. 修改首页bg-cover删除颜色渐变效果。修改具体属性 将主题目录下的layout_partial文件夹内的index-cover.ejs的1&lt;div </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/笔记/" class="post-category" target="_blank">
+                                    笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/魔改/" target="_blank">
+                        <span class="chip bg-color">-魔改</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/02/11/videotest/">
+                    <div class="card-image">
+                        
+                        <img src="https://i.loli.net/2019/02/15/5c6639552b899.jpg" class="responsive-img" alt="奇怪视频的测试">
+                        
+                        <span class="card-title">奇怪视频的测试</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">测试了Dplayer的兼容性 还不错 很好非常棒~(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/测试/" class="post-category" target="_blank">
+                                    测试
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/视频/" target="_blank">
+                        <span class="chip bg-color">-视频</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+    
+
+</main>
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
+            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+
+            
+
+            
+			
+                <br>
+                
+                <span id="busuanzi_container_site_pv">
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                </span>
+                
+                
+                <span id="busuanzi_container_site_uv">
+                    <i class="fa fa-users"></i>
+                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
+                
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+    <a href="mailto:xxx@xx.xx" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=123123123" class="tooltipped" data-tooltip="QQ联系我: 123123123" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>

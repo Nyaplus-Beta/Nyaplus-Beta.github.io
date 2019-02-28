@@ -8,7 +8,7 @@
     <meta name="description" content="标题一我感觉差不多 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;是这丫了
 标题二标题。。算了我看你是在刁难我色图在左边">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
@@ -18,43 +18,36 @@
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
     <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
-	
-	<script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-	 
-<!-- <script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/030c6a75.js","daovoice") -->
-		<!-- daovoice('init', { -->
-		<!-- app_id: "030c6a75" -->
-		<!-- }); -->
-		<!-- daovoice('update'); -->
-<!-- </script> -->
+    <style type="text/css">
+        
+    </style>
 
-	<link rel="stylesheet" type="text/css" href="assets/waifu.css">
-	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
 </head>
+
 
 <body>
 
 <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="container">
-            <div class="nav-wrapper">
-                <div class="brand-logo">
-                    <a href="/" class="waves-effect waves-light">
-                        
-                        <img src="https://i.loli.net/2019/02/15/5c667be0de38e.png" class="logo-img hide-on-small-only">
-                        
-                        <span class="logo-span">艾莉雅哒笔记</span>
-                    </a>
-                </div>
-                
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://i.loli.net/2019/02/15/5c667be0de38e.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">艾莉雅哒笔记</span>
+                </a>
+            </div>
+            
 
-<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
 <ul class="right">
     
     <li class="hide-on-med-and-down">
@@ -112,14 +105,13 @@
     </li>
     
     <li>
-        <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search" title="搜索"></i>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
         </a>
     </li>
-
 </ul>
 
-<div class="side-nav" id="mobile-nav">
+<div id="mobile-nav" class="side-nav sidenav">
 
     <div class="mobile-head bg-color">
         
@@ -128,7 +120,7 @@
         <div class="logo-name">艾莉雅哒笔记</div>
         <div class="logo-desc">
             
-            ❤
+            ✡
             
         </div>
     </div>
@@ -193,43 +185,27 @@
         
         
     </ul>
-
-    <div class="social-link">
-
-
-    <a href="mailto:995414829@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fa fa-envelope-open"></i>
-    </a>
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=995414829" class="tooltipped" data-tooltip="QQ联系我: 995414829" data-position="top" data-delay="50">
-        <i class="fa fa-qq"></i>
-    </a>
-
-
-</div>
 </div>
 
-            </div>
         </div>
 
         
     </nav>
+
 </header>
 
 
 
 
 
-<div class="bg-covers post-cover" style="background-image: url('https://i.loli.net/2019/02/15/5c6629dc25524.jpg')">
+<div class="bg-covers pd-header post-cover" style="background-image: url('https://i.loli.net/2019/02/15/5c6629dc25524.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <div class="description center-align post-title">
+                    <!-- <div class="description center-align post-title">
                         酱紫吗
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -334,6 +310,14 @@
         cursor: pointer;
     }
 
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
     #rewardModal .reward-tabs {
         margin: 0 auto;
         width: 210px;
@@ -343,6 +327,10 @@
         height: 38px;
         margin: 10px auto;
         padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
     }
 
     .reward-tabs .tabs .tab {
@@ -356,17 +344,18 @@
     }
 
     .reward-tabs .tab a:hover {
+        background-color: #ccc;
         color: #fff;
     }
 
     .reward-tabs .wechat-tab .active {
-        color: #fff;
-        background-color: #22AB38;
+        color: #fff !important;
+        background-color: #22AB38 !important;
     }
 
     .reward-tabs .alipay-tab .active {
-        color: #fff;
-        background-color: #019FE8;
+        color: #fff !important;
+        background-color: #019FE8 !important;
     }
 
     .reward-tabs .reward-img {
@@ -376,24 +365,24 @@
 </style>
 
 <div id="reward">
-    <a class="reward-link btn-floating btn-large waves-effect waves-light red">赏</a>
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-large waves-effect waves-light red">赏</a>
 
     <!-- Modal Structure -->
     <div id="rewardModal" class="modal">
         <div class="modal-content">
-            <a class="close"><i class="fa fa-close"></i></a>
+            <a class="close modal-close"><i class="fa fa-close"></i></a>
             <h4 class="reward-title">你的赏识是我前进的动力</h4>
             <div class="reward-content">
                 <div class="reward-tabs">
-                    <ul class="tabs">
-                        <li class="tab wechat-tab waves-effect waves-light"><a class="active" href="#wechat">微信</a></li>
-                        <li class="tab alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
-                    </div>
                     <div id="alipay">
                         <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -403,13 +392,7 @@
 
 <script>
     $(function () {
-        $('#reward .reward-link').on('click', function () {
-            $('#rewardModal').openModal();
-        });
-
-        $('#rewardModal .close').on('click', function () {
-            $('#rewardModal').closeModal();
-        });
+        $('.tabs').tabs();
     });
 </script>
             
@@ -554,9 +537,9 @@
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            本站由&copy;<a href="http://wpa.qq.com/msgrd?v=3&uin=995414829&site=qq&menu=yes" target="_blank">艾莉雅</a>基于
+            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
             <a href="https://hexo.io/" target="_blank">Hexo</a> 的
-            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题魔改.
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
 
             
 
@@ -580,13 +563,13 @@
         <div class="col s12 m4 l4 social-link social-statis">
 
 
-    <a href="mailto:995414829@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:xxx@xx.xx" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fa fa-envelope-open"></i>
     </a>
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=995414829" class="tooltipped" data-tooltip="QQ联系我: 995414829" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=123123123" class="tooltipped" data-tooltip="QQ联系我: 123123123" data-position="top" data-delay="50">
         <i class="fa fa-qq"></i>
     </a>
 
@@ -598,26 +581,12 @@
 <div class="progress-bar"></div>
 
 
-<link rel="stylesheet" href="/live2d/css/live2d.css" />
-			<div id="landlord">
-
-			<canvas id="live2d" width="300" height="400" class="live2d"></canvas>
-
-		
-			<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-			<script type="text/javascript">
-			var message_Path = '/live2d/'
-			var home_Path = 'https://www.rua.kim/'
-			</script>
-			<script type="text/javascript" src="/live2d/js/live2d.js"></script>
-			<script type="text/javascript" src="/live2d/js/message.js"></script>
-
 <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
             <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input" autofocus>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input">
         </div>
         <div id="searchResult"></div>
     </div>
@@ -625,7 +594,9 @@
 
 <script src="/js/search.js"></script>
 <script type="text/javascript">
+$(function () {
     searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
 </script>
 <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
@@ -635,7 +606,7 @@
 </div>
 
 
-<script src="/libs/materialize/js/materialize.min.js"></script>
+<script src="/libs/materialize/materialize.min.js"></script>
 <script src="/libs/masonry/masonry.pkgd.min.js"></script>
 <script src="/libs/aos/aos.js"></script>
 <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
@@ -650,29 +621,5 @@
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
 
 
-
-<input placeholder="和她聊天" id="talk"/>
-<form id="uploadForm">
-    <input type="file" name="file"/>
-</form>
-<div class="waifu">
-    <div class="waifu-tips"></div>
-    <canvas id="live2d" width="300" height="400" class="live2d"></canvas>
-</div>
-<script type="text/javascript">
-			var message_Path = '/assets/'
-			var home_Path = 'https://www.rua.kim/'
-			</script>
-<script src="assets/waifu-tips.js"></script>
-<script src="assets/live2d.js"></script>
-<script type="text/javascript">
-loadlive2d("live2d", "/assets/model/SaberLily/ylia02.model.json");
-</script>
-
-
 </body>
 </html>
-<!--单击显示文字-->
-<script type="text/javascript" src="/js/click_show_text.js"></script>
-<!--浏览器搞笑标题-->
-<script type="text/javascript" src="\js\FunnyTitle.js"></script>

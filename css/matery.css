@@ -99,7 +99,7 @@ blockquote {
 pre {
     padding: 1.5rem !important;
     margin: 1rem 0 !important;
-    background: #272822;
+    background: #ffffffa1;
     overflow: auto;
     border-radius: 0.35rem;
     tab-size: 4;
@@ -154,6 +154,7 @@ mark {
 }
 
 .card {
+	top:8vh;
     border-radius: 10px;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
@@ -167,7 +168,7 @@ mark {
 }
 
 .bg-color {
-background-color: rgba(255, 136, 184, 0.8);
+	background-color: rgba(255, 136, 184, 0.8);
 }
 
 .text-color {
@@ -176,21 +177,6 @@ background-color: rgba(255, 136, 184, 0.8);
 
 .white-color {
     color: #fff;
-}
-
-/*头部导航栏样式*/
-@media only screen and (max-width: 600px) {
-    header nav .brand-logo {
-        left: 80px;
-        width: 100px;
-        font-size: 1.6rem;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-    }
-
-    header .brand-logo .logo-span {
-        font-size: 1.6rem !important;
-    }
 }
 
 .progress-bar {
@@ -202,7 +188,21 @@ background-color: rgba(255, 136, 184, 0.8);
     opacity: 0.8;
 }
 
-nav, .side-nav {
+.sidenav-overlay {
+    z-index: 500;
+}
+
+.pd-header {
+    margin-top: -64px;
+}
+
+header .side-nav {
+    width: 240px;
+    z-index: 999;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 7px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+nav {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 7px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -263,18 +263,17 @@ header .side-nav .menu-list li {
 header .side-nav .menu-list a {
     height: 50px;
     line-height: 50px;
-}
-
-header .side-nav .menu-list a i {
-    line-height: 16px;
+    color: #34495e !important;
 }
 
 .mobile-menu-list a i {
-    font-size: 1.1rem;
+    margin-left: 8px !important;
+    font-size: 1.16rem;
+    color: #34495e !important;
 }
 
 header .side-nav .fa-fw {
-    width: 5rem;
+    width: 3.3rem;
     text-align: left;
 }
 
@@ -303,7 +302,7 @@ header .side-nav .social-link {
     line-height: 45px;
     font-size: 1rem;
     color: #fff;
-    border: 1px solid #ffe7f3;
+    border: 1px solid #fff;
     background-color: transparent;
     border-radius: 30px;
     box-shadow: none;
@@ -347,14 +346,13 @@ header .go-back i {
     line-height: 56px;
 }
 
-/* 主页背景图效果. */
+/* 背景图效果. */
 .bg-cover {
     position: relative;
     display: flex;
     align-items: center;
     height: 60vh;
     padding: 0;
-    margin-top: -64px;
     border: 0;
     overflow: hidden;
     background-position: center center;
@@ -362,21 +360,25 @@ header .go-back i {
     transform: translate3d(0px, 0px, 0px);
 }
 
-
 /* 文章背景图效果. */
 .bg-covers {
     position: fixed;
     display: flex;
-    align-items: center;
+	align-items: center;
     padding: 0;
     margin-top: -64px;
     border: 0;
     overflow: hidden;
-    background-position: center center;
-    background-size: 100% 100%;
+	background-position: center center;
+	background-size: 100% 120%;
     transform: translate3d(0px, 0px, 0px);
-	width:100%;
+	width:200vh;
+	height:100vh;
 
+}
+
+.index-cover {
+    height: 100vh;
 }
 
 .post-cover {
@@ -406,10 +408,11 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1.85em;
-    margin-bottom: 20px;
+	top: 270px;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -418,11 +421,12 @@ header .go-back i {
     font-weight: 300;
     line-height: 1.4em;
     color: #fff;
+	position: relative;
+	top: 270px;
 }
 
-.bg-covers .post-title {
+.bg-cover .post-title {
     font-size: 1.9rem;
-	opacity: 0.0;
 }
 
 /* @-webkit-keyframes rainbow {
@@ -505,8 +509,22 @@ header .go-back i {
     }
 } */
 
+.carousel .indicators {
+    padding-bottom: 10px !important;
+}
+
 .index-card {
-    margin-top: -40px;
+    margin-top: -50px;
+    padding-top: 20px;
+}
+
+.carousel-post .title {
+    font-size: 2.6rem;
+}
+
+.carousel-post .cover-btns a {
+    margin-top: -30px;
+	top: 240px;
 }
 
 .dream {
@@ -700,12 +718,17 @@ article a:hover {
 }
 
 article .card {
-    border-radius: 10px;
+    border-radius: 8px;
+}
+
+article .card-image {
+    background-color: #222;
 }
 
 article .card-image img {
     height: 220px;
     border-radius: 0.3rem;
+    opacity: 1;
 }
 
 article .tag-image img {
@@ -720,6 +743,7 @@ article .article-content .summary {
     padding-bottom: 2px;
     padding-left: 0;
     margin-bottom: 6px;
+    word-break: break-all;
 }
 
 article .article-content .publish-author {
@@ -740,6 +764,7 @@ article .article-content .publish-author {
 
 article .card .card-action {
     padding: 10px 15px 10px 18px;
+    border-radius: 0 0 8px 8px !important;
 }
 
 article .article-tags .chip {
@@ -777,6 +802,10 @@ article .article-tags .chip {
 .prev-next .right-badge {
     border-radius: 5px 0 0 5px;
     right: 10px;
+}
+
+.paging {
+    margin-bottom: 15px;
 }
 
 .paging .row {
@@ -971,15 +1000,22 @@ article .article-tags .chip {
     cursor: pointer;
 }
 
-#articleContent ol,
-ul {
+#articleContent video {
     display: block;
-    padding-left: 2em;
+    margin: 30px auto;
+    box-shadow: 0 5px 35px 0 rgba(0,0,0,.2), 0 10px 35px -11px rgba(0,0,0,.6);
+    cursor: pointer;
+}
+
+#articleContent ol,
+#articleContent ul {
+    display: block;
+    padding-left: 2em !important;
     word-spacing: 0.05rem;
 }
 
 #articleContent ul li,
-ol li {
+#articleContent ol li {
     display: list-item;
     line-height: 1.8rem;
     font-size: 1rem;
@@ -1065,7 +1101,7 @@ table tr:nth-child(2n), thead {
 
 .chip-container .chip {
     margin: 10px 10px;
-    padding: 0 16px;
+    padding: 0 14px;
     display: inline-block;
     height: 38px;
     min-width: 80px;
@@ -1596,7 +1632,7 @@ footer {
 
 footer .social-statis {
     margin-top: 10px;
-	position: relative;
+    position: relative;
 }
 
 footer a {
@@ -1609,7 +1645,7 @@ footer .copy-right {
 
 /*搜索层样式*/
 #searchIcon {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 #searchModal {
@@ -1711,20 +1747,25 @@ footer .copy-right {
 }
 
 .img-shadow {
-  box-shadow: 0 0 30px 1px #999;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,.2), 0 10px 30px -11px rgba(0,0,0,.6)
 }
 
 .img-margin {
-  margin: 25px auto 15px auto;
-}
-
-.center-caption {
-  color: #5f5f5f;
-  padding: 10px;
-  border-bottom: 1px solid #d9d9d9;
+    margin: 25px auto 10px auto;
 }
 
 .caption {
-  text-align: center;
-  margin: 0 auto 15px auto;
+    text-align: center;
+    margin: 0 auto 15px auto;
+}
+
+.center-caption {
+    color: #525f7f;
+    padding: 5px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.lg-sub-html .center-caption {
+    color: #fff !important;
+    border-bottom: none;
 }
