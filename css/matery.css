@@ -303,7 +303,7 @@ header .side-nav .social-link {
     font-size: 1rem;
     color: #fff;
     border: 1px solid #fff;
-    background-color: transparent;
+    background-color: rgba(000, 000, 000, 0.3);
     border-radius: 30px;
     box-shadow: none;
 }
@@ -409,11 +409,14 @@ header .go-back i {
 
 .bg-cover .title {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 100%;
     line-height: 1.85em;
 	top: 270px;
     margin-bottom: 10px;
     position: relative;
+	background-color: rgba(000, 000, 00, 0.4);
+	border-radius: 15px 15px 0px 0px;
+	margin: 0 auto;
 }
 
 .bg-cover .description {
@@ -423,6 +426,8 @@ header .go-back i {
     color: #fff;
 	position: relative;
 	top: 270px;
+	background-color: rgba(000, 000, 00, 0.4);
+	border-radius: 0px 0px 15px 15px;
 }
 
 .bg-cover .post-title {
