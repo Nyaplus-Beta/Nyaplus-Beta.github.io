@@ -347,7 +347,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     </div>
     
     
-    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('https://i.loli.net/2019/02/15/5c66378f95da4.jpg');">
+    <div class="carousel-item amber white-text carousel-post bg-cover" style="background-image: url('https://i.loli.net/2019/02/28/5c77f935986a3.png');">
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
@@ -507,8 +507,19 @@ $(function () {
 
     let carouselIntervalId;
     
+    // Loop to call the next cover article picture.
+    let autoCarousel = function() {
+        carouselIntervalId = setInterval(function () {
+            coverSlider.carousel('next');
+        }, 5000);
+    };
+    autoCarousel();
+    
 
     let restartPlay = function () {
+        
+        clearInterval(carouselIntervalId);
+        autoCarousel();
         
     };
 
@@ -668,6 +679,53 @@ $(function () {
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
         <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a target="_blank" href="/2019/03/02/test2/">
+                        <div class="card-image">
+                            
+                            <img src="https://i.loli.net/2019/03/03/5c7aaba932c37.jpg" class="responsive-img" alt="test2">
+                            
+                            <!-- <span class="card-title">test2</span> -->
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary">
+                            
+                                          与&nbsp;  Mashiro&nbsp;  （    真（ま）白（しろ）    ）    对话中…        
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-02
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/测试/" class="post-category" target="_blank">
+                                    测试
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/测试time/" target="_blank">
+                            <span class="chip bg-color">-测试time</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -950,7 +1008,7 @@ $(function () {
                     <a target="_blank" href="/2018/12/21/psimage2/">
                         <div class="card-image">
                             
-                            <img src="https://i.loli.net/2019/02/15/5c66378f95da4.jpg" class="responsive-img" alt="【教程】点开就变的图片简单的制作方法(3)">
+                            <img src="https://i.loli.net/2019/02/28/5c77f935986a3.png" class="responsive-img" alt="【教程】点开就变的图片简单的制作方法(3)">
                             
                             <!-- <span class="card-title">【教程】点开就变的图片简单的制作方法(3)</span> -->
                         </div>
