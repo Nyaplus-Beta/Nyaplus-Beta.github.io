@@ -28,7 +28,7 @@
 }
 
 body {
-    background-image: url(https://i.loli.net/2019/02/15/5c66379086ae3.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.1/images/5c66379086ae3.webp);
     background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center;
@@ -417,7 +417,7 @@ header .go-back i {
     font-size: 3rem;
     font-weight: 100%;
     line-height: 1.85em;
-	top: 270px;
+	/* top: 270px; */
     margin-bottom: 10px;
     position: relative;
 	background-color: rgba(000, 000, 00, 0.4);
@@ -430,8 +430,8 @@ header .go-back i {
     font-weight: 300;
     line-height: 1.4em;
     color: #fff;
-	position: relative;
-	top: 270px;
+	/* position: relative; */
+	/* top: 270px; */
 	background-color: rgba(000, 000, 00, 0.4);
 	border-radius: 0px 0px 15px 15px;
 }
@@ -535,7 +535,7 @@ header .go-back i {
 
 .carousel-post .cover-btns a {
     margin-top: -30px;
-	top: 240px;
+	/* top: 240px; */
 }
 
 .dream {
