@@ -160,7 +160,6 @@ mark {
 }
 
 .card {
-	top:8vh;
     border-radius: 10px;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
@@ -372,11 +371,10 @@ header .go-back i {
     display: flex;
 	align-items: center;
     padding: 0;
-    margin-top: -64px;
     border: 0;
     overflow: hidden;
 	background-position: center center;
-	background-size: 100% 120%;
+	background-size: 100%;
     transform: translate3d(0px, 0px, 0px);
 	width:200vh;
 	height:100vh;
@@ -737,7 +735,7 @@ article .card-image {
 }
 
 article .card-image img {
-    height: 220px;
+	height: 100%;
     border-radius: 0.3rem;
     opacity: 1;
 }
@@ -862,6 +860,7 @@ article .article-tags .chip {
 }
 
 #artDetail .card {
+	top:6vh;
     box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
     0 5px 15px rgba(0, 0, 0, .07),
     0 2px 5px -5px rgba(0, 0, 0, .1) !important;
@@ -1299,7 +1298,7 @@ table tr:nth-child(2n), thead {
     margin-left: 60px;
     padding: 0;
     border-radius: 5px;
-    background: #ffffff;
+    /* background: #ffffff; */
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
 
