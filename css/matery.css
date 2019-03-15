@@ -123,7 +123,7 @@ code {
 pre code {
     padding: 0;
     color: #e8eaf6;
-    background-color: #272822;
+    background-color: #69882f;
 }
 
 pre[class*="language-"] {
@@ -550,7 +550,7 @@ header .go-back i {
 }
 
 .dream .text {
-    opacity: .6;
+    opacity: 1;
     font-size: 1.1rem;
 }
 

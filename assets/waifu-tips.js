@@ -48,7 +48,7 @@ function add() {
         type: "post",
         dataType: "json",
         data: {
-            key: "03ad06ed6ea3409088755f3b60740227",//APIKey
+            key: "fef0c701b0d74c4c9eb1a277749e3a54",//APIKey
             info: text//用户文本
         },
         success: function (data, status) {

@@ -1,3 +1,13 @@
+@media only screen and (max-width: 601px) {
+    #talk{
+                display: none; /*把类的元素隐藏掉*/
+            }
+	#uploadForm{
+                display: none; 
+            }
+			
+}
+
 hr{
     height:1px;border:none;border-top:1px solid black;
 }

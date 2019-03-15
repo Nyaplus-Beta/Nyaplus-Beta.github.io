@@ -478,7 +478,53 @@ body {
     border-radius:10px;
 }
 </code></pre><h2 id="魔改记录13-修改1级2级3级4级5级6级标题为居中"><a href="#魔改记录13-修改1级2级3级4级5级6级标题为居中" class="headerlink" title="魔改记录13. 修改1级2级3级4级5级6级标题为居中"></a>魔改记录13. 修改1级2级3级4级5级6级标题为居中</h2><p>\source\css\matery.css<br>修改属性h1 2 3 4 5 6每个添加属性<code>text-align: center;</code></p>
-<h4 id="番外魔改记录14-放置live2D看板娘和AI对话接入"><a href="#番外魔改记录14-放置live2D看板娘和AI对话接入" class="headerlink" title="番外魔改记录14. 放置live2D看板娘和AI对话接入"></a>番外魔改记录14. 放置live2D看板娘和AI对话接入</h4>
+<h2 id="魔改记录14-修改代码高亮背景颜色"><a href="#魔改记录14-修改代码高亮背景颜色" class="headerlink" title="魔改记录14.修改代码高亮背景颜色"></a>魔改记录14.修改代码高亮背景颜色</h2><p>matery.css中修改<br>pre code<br>background-color: #69882f;</p>
+<h2 id="番外魔改记录15-放置live2D看板娘和AI对话接入"><a href="#番外魔改记录15-放置live2D看板娘和AI对话接入" class="headerlink" title="番外魔改记录15. 放置live2D看板娘和AI对话接入"></a>番外魔改记录15. 放置live2D看板娘和AI对话接入</h2><p>1在head里加入</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/waifu.css&quot;/&gt;
+&lt;script src=&quot;https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+</code></pre><p>2在index.jes里加入</p>
+<pre><code>&lt;main class=&quot;content&quot;&gt;
+    &lt;input placeholder=&quot;和她聊天&quot; id=&quot;talk&quot;/&gt;
+        &lt;form id=&quot;uploadForm&quot;&gt;
+        &lt;input type=&quot;file&quot; name=&quot;file&quot;/&gt;
+        &lt;/form&gt;
+    &lt;div class=&quot;waifu&quot;&gt;
+        &lt;div class=&quot;waifu-tips&quot;&gt;&lt;/div&gt;
+        &lt;canvas id=&quot;live2d&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;live2d&quot;&gt;&lt;/canvas&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            var message_Path = &apos;/assets/&apos;
+            var home_Path = &apos;https://www.rua.kim/&apos;
+            &lt;/script&gt;
+        &lt;div class=&quot;waifu-tool&quot;&gt;
+            &lt;span class=&quot;fui-home&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;fui-chat&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;fui-eye&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;fui-user&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;fui-photo&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;fui-info-circle&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;fui-cross&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src=&quot;assets/waifu-tips.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;assets/live2d.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;initModel(&quot;assets/&quot;)&lt;/script&gt;
+</code></pre><p>3将模型换成自己的模型<br>waifu-tips.js里<br><code>function loadModel(modelId, modelTexturesId)</code><br>的<code>loadlive2d(&#39;live2d&#39;, &quot;/assets/model/SaberLily/ylia02.model.json&quot;);</code>修改成自己的路径</p>
+<p>4对话框的调整和响应式设计在手机页面隐藏<br>在waifu.css里添加属性<br>    @media only screen and (max-width: 601px) {</p>
+<pre><code>    #talk{
+                display: none; /*把类的元素隐藏掉*/
+            }
+    #uploadForm{
+                display: none; 
+            }
+
+}
+</code></pre><h2 id="番外魔改记录16-增互动介绍对话框与响应式设计"><a href="#番外魔改记录16-增互动介绍对话框与响应式设计" class="headerlink" title="番外魔改记录16. 增互动介绍对话框与响应式设计"></a>番外魔改记录16. 增互动介绍对话框与响应式设计</h2><p>代码太长了不打算写在这<br>为了让对话框内的图片显示正常 修改了<br>dream属性<br>matery.css内修改</p>
+<pre><code> .dream .text {
+    opacity: 1;
+    font-size: 1.1rem;
+}
+</code></pre>
             </div>
             <hr>
 
@@ -659,12 +705,31 @@ body {
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">          与&nbsp;  Mashiro&nbsp;  （    真（ま）白（しろ）    ）    对话中…        
+                    <div class="summary">
+[さくら荘のhojun]
+
+  
+  
+  
+  
+  与&nbsp;
+  Mashiro&nbsp;
+  （
+  
+  真（ま）白（しろ）
+  
+  ）
+  
+  对话中...
+  
+  
+  
+  
 
 
 
-(function(){
-  var botui = new BotUI('hello-mas</div>
+
+function bot_</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-02
@@ -708,7 +773,7 @@ body {
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">测试了Dplayer的兼容性 还不错 很好非常棒~(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{</div>
+                    <div class="summary">全 损 画 质 ！(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"https://c</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-11
@@ -824,13 +889,13 @@ body {
         <div class="col s12 m4 l4 social-link social-statis">
 
 
-    <a href="mailto:xxx@xx.xx" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:995414829@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fa fa-envelope-open"></i>
     </a>
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=123123123" class="tooltipped" data-tooltip="QQ联系我: 123123123" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=995414829" class="tooltipped" data-tooltip="QQ联系我: 995414829" data-position="top" data-delay="50">
         <i class="fa fa-qq"></i>
     </a>
 
