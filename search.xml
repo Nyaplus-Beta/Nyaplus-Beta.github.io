@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>live2_facerig</title>
+      <link href="/2019/03/15/live2-facerig/"/>
+      <url>/2019/03/15/live2-facerig/</url>
+      
+        <content type="html"><![CDATA[<h1 id="FaceRig-Live2D的虚拟形象的制作教程"><a href="#FaceRig-Live2D的虚拟形象的制作教程" class="headerlink" title="FaceRig+Live2D的虚拟形象的制作教程"></a>FaceRig+Live2D的虚拟形象的制作教程</h1><p><img src="https://i.loli.net/2019/03/17/5c8e6d171a590.gif" alt=""></p><p>FaceRig是steam上的软件 不贵配置要求很低 基于面部捕捉技术来实现模型动作交互等功能可以用于直播<br>制作FaceRig的live2D的虚拟形象还要购买一个live2D的DLC大概5块<br>打开Facerig之后默认设置就可以直接进入。只要开启摄像头即可。<br>3D的虚拟形象比较少。live2D可以直接追加模型而且比较方便。创意工坊也很多大佬模型。<br>并不是很复杂的界面都是中文 所以不多做描述了。记得点高级模式。也是有官方中文的。有一个广播功能。可以直接虚拟摄像头，在各种录播直播软件中<br>选择即可。</p><h2 id="关于Live2d版本选择的问题"><a href="#关于Live2d版本选择的问题" class="headerlink" title="关于Live2d版本选择的问题"></a>关于Live2d版本选择的问题</h2><p>每款均可免费试用，试用即为正版，不过有时限（40-60天），到期后只能入正版或者使用免费版；免费版即为阉割版，限制使用一些很方便的功能，比如复制粘贴参数值。<br>由于官方主力研发3.0版本，旧版不再更新，激活码也只能买到3的（也可以找官方用3的激活码兑换2的激活码），按月和年收费，个人版840R/年，企业版4000R/年（企业版是给年销售额在58万以上的公司使用的），功能均相同。<br>从功能上来说，3比2更方便，而且3还还在不断改进中，而SDK(程序用）根据平台也分为2.0，2.1和3.0和3.3的SDK，所以还是以应用为主来选择版本。如果是自己做着玩，推荐用3以上的版本。<br>web的3.0sdk是有的。但是3.0的js插件都没人做<br>如果是想要免费可以找我要旧版。不限制功能的神秘版本。</p><h2 id="正式开始制作"><a href="#正式开始制作" class="headerlink" title="正式开始制作"></a>正式开始制作</h2><p>由于教程太多 想用模板自己改的玩FaceRig的康详细教程<a href="https://www.bilibili.com/video/av5230566" target="_blank" rel="noopener">【新手教程】从零开始的虚拟形象制作教程 facerig+live2D</a><br>作者猫粮君，分5P的套版建模(不含动作，适合纯新手，空间内还有其他live2d教程哦</p><p>想自己做人设建模的康康<a href="https://www.bilibili.com/video/av2159115" target="_blank" rel="noopener">live2d Cubism2.0入门级教程</a><br>版本比较老，部分做法不是完全适用3.0及以上版本，但是最详细手把手教你。基础推荐<br><img src="/2019/03/15/live2-facerig/wk.jpg" alt="九轴参考"></p><p>ps；我就是康这个边康边做学的建模 动画的话我有基础要学的画需要点精力学习的。</p><p>补充安装2.1的Viewer需要AdobeAIR。<br>如果需要用于live2DViewerEX的话需要打包LPK软件Live2DConfigGenerator，另外最新版的live2DViewerEX也可以编辑PLK并且打包成桌面宠物<br>软件在steam上 我一直用的 最强没有之一的桌面壁纸软件<a href="https://store.steampowered.com/app/616720/Live2DViewerEX" target="_blank" rel="noopener">小声吹爆</a><br>官方还提供了json的请求方法函数和变量名。自定义模型动作和逻辑。<br>ps：EX还有安卓版哦</p><p>其他教程<br><a href="https://www.bilibili.com/video/av10625938" target="_blank" rel="noopener">AV1062538</a><br>熟肉官方2.1教程搬运极情极剑<br><a href="https://www.bilibili.com/video/av8151958" target="_blank" rel="noopener">AV8151958</a><br>作者Maxon Creative，比较完善工具和技巧介绍</p><p><a href="https://www.bilibili.com/video/av12529871" target="_blank" rel="noopener">AV1259871</a><br>搬运up:厄不是嫩草，有中文字幕，另外几P去作者空间里翻一翻，非常实用的官方教程</p><p><a href="https://www.bilibili.com/video/av28591405" target="_blank" rel="noopener">AV28591405</a><br>作者めめめ？，轻松愉快并且很有用的介绍，有中文字幕</p><p><a href="https://www.bilibili.com/video/av22931421" target="_blank" rel="noopener">AV22931421</a><br>作者oeasy，很热心的大叔？比较不错</p><p>群里大量的资料自己整理了一下 放百度云了。禁止扩散二次配布。<br>提取码目前不公开 联系我获取<br><a href="https://pan.baidu.com/s/1dGJl9uXgYAk_0aPavyZVrA" target="_blank" rel="noopener">百度云</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -live2ds </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test2</title>
       <link href="/2019/03/02/test2/"/>
       <url>/2019/03/02/test2/</url>

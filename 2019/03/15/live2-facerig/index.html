@@ -4,32 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="test2, 艾莉雅">
-    <meta name="description" content="
-[さくら荘のhojun]
-
-  
-  
-  
-  
-  与&amp;nbsp;
-  Mashiro&amp;nbsp;
-  （
-  
-  真（ま）白（しろ）
-  
-  ）
-  
-  对话中...
-  
-  
-  
-  
-
-
-
-
-function bot_">
+    <meta name="keywords" content="live2_facerig, 艾莉雅">
+    <meta name="description" content="FaceRig+Live2D的虚拟形象的制作教程
+FaceRig是steam上的软件 不贵配置要求很低 基于面部捕捉技术来实现模型动作交互等功能可以用于直播制作FaceRig的live2D的虚拟形象还要购买一个live2D的DLC大概5块打">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -37,7 +14,7 @@ function bot_">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>test2 | 艾莉雅</title>
+    <title>live2_facerig | 艾莉雅</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 	
 	<link rel="stylesheet" type="text/css" href="assets/waifu.css">
@@ -230,13 +207,13 @@ function bot_">
 
 
 
-<div class="bg-covers pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.1/images/5c7aaba932c37.webp')">
+<div class="bg-covers pd-header post-cover" style="background-image: url('/images/nya.gif')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <!-- <div class="description center-align post-title">
-                        test2
+                        live2_facerig
                     </div> -->
                 </div>
             </div>
@@ -258,8 +235,8 @@ function bot_">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/测试time/" target="_blank">
-                                <span class="chip bg-color">-测试time</span>
+                            <a href="/tags/live2ds/" target="_blank">
+                                <span class="chip bg-color">-live2ds</span>
                             </a>
                         
                     </div>
@@ -270,8 +247,8 @@ function bot_">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/测试/" class="post-category" target="_blank">
-                                测试
+                            <a href="/categories/教程/" class="post-category" target="_blank">
+                                教程
                             </a>
                         
                     </div>
@@ -282,7 +259,7 @@ function bot_">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-02
+                    2019-03-15
                 </div>
 
                 
@@ -298,167 +275,18 @@ function bot_">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
-<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px;">[さくら荘のhojun]</div>
-<div id="hello-mashiro" class="popcontainer" style="min-height: 300px; padding: 2px 6px 4px; background-color: rgba(242, 242, 242, 0.5); border-radius: 10px;">
-  <center>
-  <p>
-  </p>
-  <h4>
-  与&nbsp;<ruby>
-  Mashiro&nbsp;<rp>
-  （</rp>
-  <rt>
-  真（ま）白（しろ）</rt>
-  <rp>
-  ）</rp>
-  </ruby>
-  对话中...</h4>
-  <p>
-  </p>
-  </center>
-  <bot-ui>
-</bot-ui></div>
-<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
-<script src="https://unpkg.com/botui/build/botui.min.js"></script>
-<script>
-function bot_ui_ini() {
-    var botui = new BotUI("hello-mashiro");
-    botui.message.add({
-        delay: 800,
-        content: "Hi, there111👋"
-    }).then(function () {
-        botui.message.add({
-            delay: 1100,
-            content: "这里是 Mashiro"
-        }).then(function () {
-            botui.message.add({
-                delay: 1100,
-                content: "一个可爱的蓝孩子~"
-            }).then(function () {
-                botui.action.button({
-                    delay: 1600,
-                    action: [{
-                        text: "然后呢？ 😃",
-                        value: "sure"
-                    }, {
-                        text: "少废话！ 🙄",
-                        value: "skip"
-                    }]
-                }).then(function (a) {
-                    "sure" == a.value && sure();
-                    "skip" == a.value && end()
-                })
-            })
-        })
-    });
-    var sure = function () {
-            botui.message.add({
-                delay: 600,
-                content: "😘"
-            }).then(function () {
-                secondpart()
-            })
-        },
-        end = function () {
-            botui.message.add({
-                delay: 600,
-                content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
-            })
-        },
-        secondpart = function () {
-            botui.message.add({
-                delay: 1500,
-                content: "目前就读于上海财经大学"
-            }).then(function () {
-                botui.message.add({
-                    delay: 1500,
-                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
-                }).then(function () {
-                    botui.message.add({
-                        delay: 1200,
-                        content: "因为数据分析也需要Coder嘛"
-                    }).then(function () {
-                        botui.message.add({
-                            delay: 1500,
-                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
-                        }).then(function () {
-                            botui.message.add({
-                                delay: 1500,
-                                content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
-                            }).then(function () {
-                                botui.message.add({
-                                    delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师"
-                                }).then(function () {
-                                    botui.action.button({
-                                        delay: 1100,
-                                        action: [{
-                                            text: "为什么叫Mashiro呢？ 🤔",
-                                            value: "why-mashiro"
-                                        }]
-                                    }).then(function (a) {
-                                        thirdpart()
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
-            })
-        },
-        thirdpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "Mashiro以及站名都来自一部动画，因为和主角有一样的爱好~ 如果有兴趣可以找找首页上的视频~"
-            }).then(function () {
-                botui.action.button({
-                    delay: 1500,
-                    action: [{
-                        text: "为什么是白猫呢？ 🤔",
-                        value: "why-cat"
-                    }]
-                }).then(function (a) {
-                    fourthpart()
-                })
-            })
-        },
-        fourthpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "因为对GitHub有种执念… "
-            }).then(function () {
-                botui.message.add({
-                    delay: 1100,
-                    content: "而且我真的是猫控！"
-                }).then(function () {
-                    botui.action.button({
-                        delay: 1500,
-                        action: [{
-                            text: "域名有什么含意吗？(ง •_•)ง",
-                            value: "why-domain"
-                        }]
-                    }).then(function (a) {
-                        fifthpart()
-                    })
-                })
-            })
-        },
-        fifthpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "emmmm，看备案信息你就知道了=.= 本来想要zheng.xin的，但50万真买不起。。"
-            }).then(function () {
-                botui.message.add({
-                    delay: 1600,
-                    content: "那么，仔细看看我的博客吧？ ^_^"
-                })
-            })
-        } 
-}
-bot_ui_ini()
-</script>
-
+                <h1 id="FaceRig-Live2D的虚拟形象的制作教程"><a href="#FaceRig-Live2D的虚拟形象的制作教程" class="headerlink" title="FaceRig+Live2D的虚拟形象的制作教程"></a>FaceRig+Live2D的虚拟形象的制作教程</h1><p><img src="https://i.loli.net/2019/03/17/5c8e6d171a590.gif" alt=""></p>
+<p>FaceRig是steam上的软件 不贵配置要求很低 基于面部捕捉技术来实现模型动作交互等功能可以用于直播<br>制作FaceRig的live2D的虚拟形象还要购买一个live2D的DLC大概5块<br>打开Facerig之后默认设置就可以直接进入。只要开启摄像头即可。<br>3D的虚拟形象比较少。live2D可以直接追加模型而且比较方便。创意工坊也很多大佬模型。<br>并不是很复杂的界面都是中文 所以不多做描述了。记得点高级模式。也是有官方中文的。有一个广播功能。可以直接虚拟摄像头，在各种录播直播软件中<br>选择即可。</p>
+<h2 id="关于Live2d版本选择的问题"><a href="#关于Live2d版本选择的问题" class="headerlink" title="关于Live2d版本选择的问题"></a>关于Live2d版本选择的问题</h2><p>每款均可免费试用，试用即为正版，不过有时限（40-60天），到期后只能入正版或者使用免费版；免费版即为阉割版，限制使用一些很方便的功能，比如复制粘贴参数值。<br>由于官方主力研发3.0版本，旧版不再更新，激活码也只能买到3的（也可以找官方用3的激活码兑换2的激活码），按月和年收费，个人版840R/年，企业版4000R/年（企业版是给年销售额在58万以上的公司使用的），功能均相同。<br>从功能上来说，3比2更方便，而且3还还在不断改进中，而SDK(程序用）根据平台也分为2.0，2.1和3.0和3.3的SDK，所以还是以应用为主来选择版本。如果是自己做着玩，推荐用3以上的版本。<br>web的3.0sdk是有的。但是3.0的js插件都没人做<br>如果是想要免费可以找我要旧版。不限制功能的神秘版本。</p>
+<h2 id="正式开始制作"><a href="#正式开始制作" class="headerlink" title="正式开始制作"></a>正式开始制作</h2><p>由于教程太多 想用模板自己改的玩FaceRig的康详细教程<a href="https://www.bilibili.com/video/av5230566" target="_blank" rel="noopener">【新手教程】从零开始的虚拟形象制作教程 facerig+live2D</a><br>作者猫粮君，分5P的套版建模(不含动作，适合纯新手，空间内还有其他live2d教程哦</p>
+<p>想自己做人设建模的康康<a href="https://www.bilibili.com/video/av2159115" target="_blank" rel="noopener">live2d Cubism2.0入门级教程</a><br>版本比较老，部分做法不是完全适用3.0及以上版本，但是最详细手把手教你。基础推荐<br><img src="/2019/03/15/live2-facerig/wk.jpg" alt="九轴参考"></p>
+<p>ps；我就是康这个边康边做学的建模 动画的话我有基础要学的画需要点精力学习的。</p>
+<p>补充安装2.1的Viewer需要AdobeAIR。<br>如果需要用于live2DViewerEX的话需要打包LPK软件Live2DConfigGenerator，另外最新版的live2DViewerEX也可以编辑PLK并且打包成桌面宠物<br>软件在steam上 我一直用的 最强没有之一的桌面壁纸软件<a href="https://store.steampowered.com/app/616720/Live2DViewerEX" target="_blank" rel="noopener">小声吹爆</a><br>官方还提供了json的请求方法函数和变量名。自定义模型动作和逻辑。<br>ps：EX还有安卓版哦</p>
+<p>其他教程<br><a href="https://www.bilibili.com/video/av10625938" target="_blank" rel="noopener">AV1062538</a><br>熟肉官方2.1教程搬运极情极剑<br><a href="https://www.bilibili.com/video/av8151958" target="_blank" rel="noopener">AV8151958</a><br>作者Maxon Creative，比较完善工具和技巧介绍</p>
+<p><a href="https://www.bilibili.com/video/av12529871" target="_blank" rel="noopener">AV1259871</a><br>搬运up:厄不是嫩草，有中文字幕，另外几P去作者空间里翻一翻，非常实用的官方教程</p>
+<p><a href="https://www.bilibili.com/video/av28591405" target="_blank" rel="noopener">AV28591405</a><br>作者めめめ？，轻松愉快并且很有用的介绍，有中文字幕</p>
+<p><a href="https://www.bilibili.com/video/av22931421" target="_blank" rel="noopener">AV22931421</a><br>作者oeasy，很热心的大叔？比较不错</p>
+<p>群里大量的资料自己整理了一下 放百度云了。禁止扩散二次配布。<br>提取码目前不公开 联系我获取<br><a href="https://pan.baidu.com/s/1dGJl9uXgYAk_0aPavyZVrA" target="_blank" rel="noopener">百度云</a></p>
 
             </div>
             <hr>
@@ -606,7 +434,7 @@ bot_ui_ini()
                     </span>
                     <a href="https://rua.kim" class="b-link-green">艾莉雅</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/03/02/test2/" class="b-link-green">test2</a>
+                    <a href="/2019/03/15/live2-facerig/" class="b-link-green">live2_facerig</a>
                 </p>
             </div>
         </div>
@@ -629,7 +457,8 @@ bot_ui_ini()
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/03/15/live2-facerig/">
                     <div class="card-image">
@@ -643,9 +472,9 @@ bot_ui_ini()
                     <div class="summary">FaceRig+Live2D的虚拟形象的制作教程
 FaceRig是steam上的软件 不贵配置要求很低 基于面部捕捉技术来实现模型动作交互等功能可以用于直播制作FaceRig的live2D的虚拟形象还要购买一个live2D的DLC大概5块打</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -658,6 +487,7 @@ FaceRig是steam上的软件 不贵配置要求很低 基于面部捕捉技术来
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -676,28 +506,50 @@ FaceRig是steam上的软件 不贵配置要求很低 基于面部捕捉技术来
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/02/26/mogai/">
+                <a href="/2019/03/02/test2/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.1/images/5c791d08cde8d.jpg.webp" class="responsive-img" alt="Hexo的matery主题魔改折腾笔记">
+                        <img src="https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.1/images/5c7aaba932c37.webp" class="responsive-img" alt="test2">
                         
-                        <span class="card-title">Hexo的matery主题魔改折腾笔记</span>
+                        <span class="card-title">test2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">《Hexo的matery主题魔改折腾笔记》原主题github地址
+                    <div class="summary">
+[さくら荘のhojun]
 
-魔改记录1. 修改首页bg-cover删除颜色渐变效果并增加自定义背景。修改具体属性 将主题目录下的layout_partial文件夹内的index-cover.ejs的&</div>
+  
+  
+  
+  
+  与&nbsp;
+  Mashiro&nbsp;
+  （
+  
+  真（ま）白（しろ）
+  
+  ）
+  
+  对话中...
+  
+  
+  
+  
+
+
+
+
+function bot_</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-26
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/笔记/" class="post-category" target="_blank">
-                                    笔记
+                            <a href="/categories/测试/" class="post-category" target="_blank">
+                                    测试
                                 </a>
                             
                             
@@ -707,8 +559,8 @@ FaceRig是steam上的软件 不贵配置要求很低 基于面部捕捉技术来
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/魔改/" target="_blank">
-                        <span class="chip bg-color">-魔改</span>
+                    <a href="/tags/测试time/" target="_blank">
+                        <span class="chip bg-color">-测试time</span>
                     </a>
                     
                 </div>
