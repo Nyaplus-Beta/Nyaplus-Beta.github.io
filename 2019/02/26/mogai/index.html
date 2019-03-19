@@ -382,9 +382,10 @@ body {
     border: 0;
     overflow: hidden;
     background-position: center center;
-    background-size: 100% 120%; #看图片调整比例
+    background-size: 100%;
     transform: translate3d(0px, 0px, 0px);
-    width:100%;
+    width:210vh; 根据浏览器调整
+    height:100vh;
 }
 
 卡片背景
@@ -524,7 +525,8 @@ body {
     opacity: 1;
     font-size: 1.1rem;
 }
-</code></pre>
+</code></pre><h2 id="魔改记录17-修改首页推荐文章阅读更多按钮的颜色"><a href="#魔改记录17-修改首页推荐文章阅读更多按钮的颜色" class="headerlink" title="魔改记录17. 修改首页推荐文章阅读更多按钮的颜色"></a>魔改记录17. 修改首页推荐文章阅读更多按钮的颜色</h2><p>layout_widget\recommend.ejs</p>
+
             </div>
             <hr>
 
@@ -699,37 +701,19 @@ body {
                 <a href="/2019/03/02/test2/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.1/images/5c7aaba932c37.webp" class="responsive-img" alt="test2">
+                        <img src="https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.1/images/5c7aaba932c37.webp" class="responsive-img" alt="Markdown基本语法">
                         
-                        <span class="card-title">test2</span>
+                        <!-- <span class="card-title">Markdown基本语法</span> -->
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">
-[さくら荘のhojun]
-
-  
-  
-  
-  
-  与&nbsp;
-  Mashiro&nbsp;
-  （
-  
-  真（ま）白（しろ）
-  
-  ）
-  
-  对话中...
-  
-  
-  
-  
-
-
-
-
-function bot_</div>
+                    <div class="summary">一、标题在想要设置为标题的文字前面加#来表示一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。
+注：标准语法一般在#后跟个空格再写文字，貌似简书不加空格也行。
+示例：
+# 这是一级标题
+## 这是二级标题
+### 这是三级标题
+#</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-02
@@ -738,8 +722,8 @@ function bot_</div>
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/测试/" class="post-category" target="_blank">
-                                    测试
+                            <a href="/categories/教程/" class="post-category" target="_blank">
+                                    教程
                                 </a>
                             
                             
@@ -749,8 +733,8 @@ function bot_</div>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/测试time/" target="_blank">
-                        <span class="chip bg-color">-测试time</span>
+                    <a href="/tags/教程/" target="_blank">
+                        <span class="chip bg-color">-教程</span>
                     </a>
                     
                 </div>
@@ -769,11 +753,11 @@ function bot_</div>
                         
                         <img src="https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.1/images/5c792d1e4cc7e.webp" class="responsive-img" alt="奇怪视频的测试">
                         
-                        <span class="card-title">奇怪视频的测试</span>
+                        <!-- <span class="card-title">奇怪视频的测试</span> -->
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">全 损 画 质 ！(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"https://c</div>
+                    <div class="summary">あ あ あ あ あ あ ！(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"https</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-11

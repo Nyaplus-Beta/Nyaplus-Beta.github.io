@@ -21,6 +21,7 @@ hr{
     transition: all .3s ease-in-out;
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
+	
 }
 
 #uploadForm{
@@ -43,6 +44,7 @@ hr{
     transition: all .3s ease-in-out;
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
+	cursor:url(finger.cur),auto;
 }
 .waifu:hover {
     -webkit-transform: translateY(0);

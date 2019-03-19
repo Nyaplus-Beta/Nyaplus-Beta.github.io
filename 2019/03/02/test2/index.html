@@ -4,32 +4,14 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="test2, 艾莉雅">
-    <meta name="description" content="
-[さくら荘のhojun]
-
-  
-  
-  
-  
-  与&amp;nbsp;
-  Mashiro&amp;nbsp;
-  （
-  
-  真（ま）白（しろ）
-  
-  ）
-  
-  对话中...
-  
-  
-  
-  
-
-
-
-
-function bot_">
+    <meta name="keywords" content="Markdown基本语法, 艾莉雅">
+    <meta name="description" content="一、标题在想要设置为标题的文字前面加#来表示一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。
+注：标准语法一般在#后跟个空格再写文字，貌似简书不加空格也行。
+示例：
+# 这是一级标题
+## 这是二级标题
+### 这是三级标题
+#">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -37,7 +19,7 @@ function bot_">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>test2 | 艾莉雅</title>
+    <title>Markdown基本语法 | 艾莉雅</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 	
 	<link rel="stylesheet" type="text/css" href="assets/waifu.css">
@@ -236,7 +218,7 @@ function bot_">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <!-- <div class="description center-align post-title">
-                        test2
+                        Markdown基本语法
                     </div> -->
                 </div>
             </div>
@@ -258,8 +240,8 @@ function bot_">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/测试time/" target="_blank">
-                                <span class="chip bg-color">-测试time</span>
+                            <a href="/tags/教程/" target="_blank">
+                                <span class="chip bg-color">-教程</span>
                             </a>
                         
                     </div>
@@ -270,8 +252,8 @@ function bot_">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/测试/" class="post-category" target="_blank">
-                                测试
+                            <a href="/categories/教程/" class="post-category" target="_blank">
+                                教程
                             </a>
                         
                     </div>
@@ -298,167 +280,214 @@ function bot_">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
-<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px;">[さくら荘のhojun]</div>
-<div id="hello-mashiro" class="popcontainer" style="min-height: 300px; padding: 2px 6px 4px; background-color: rgba(242, 242, 242, 0.5); border-radius: 10px;">
-  <center>
-  <p>
-  </p>
-  <h4>
-  与&nbsp;<ruby>
-  Mashiro&nbsp;<rp>
-  （</rp>
-  <rt>
-  真（ま）白（しろ）</rt>
-  <rp>
-  ）</rp>
-  </ruby>
-  对话中...</h4>
-  <p>
-  </p>
-  </center>
-  <bot-ui>
-</bot-ui></div>
-<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
-<script src="https://unpkg.com/botui/build/botui.min.js"></script>
-<script>
-function bot_ui_ini() {
-    var botui = new BotUI("hello-mashiro");
-    botui.message.add({
-        delay: 800,
-        content: "Hi, there111👋"
-    }).then(function () {
-        botui.message.add({
-            delay: 1100,
-            content: "这里是 Mashiro"
-        }).then(function () {
-            botui.message.add({
-                delay: 1100,
-                content: "一个可爱的蓝孩子~"
-            }).then(function () {
-                botui.action.button({
-                    delay: 1600,
-                    action: [{
-                        text: "然后呢？ 😃",
-                        value: "sure"
-                    }, {
-                        text: "少废话！ 🙄",
-                        value: "skip"
-                    }]
-                }).then(function (a) {
-                    "sure" == a.value && sure();
-                    "skip" == a.value && end()
-                })
-            })
-        })
-    });
-    var sure = function () {
-            botui.message.add({
-                delay: 600,
-                content: "😘"
-            }).then(function () {
-                secondpart()
-            })
-        },
-        end = function () {
-            botui.message.add({
-                delay: 600,
-                content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
-            })
-        },
-        secondpart = function () {
-            botui.message.add({
-                delay: 1500,
-                content: "目前就读于上海财经大学"
-            }).then(function () {
-                botui.message.add({
-                    delay: 1500,
-                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
-                }).then(function () {
-                    botui.message.add({
-                        delay: 1200,
-                        content: "因为数据分析也需要Coder嘛"
-                    }).then(function () {
-                        botui.message.add({
-                            delay: 1500,
-                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
-                        }).then(function () {
-                            botui.message.add({
-                                delay: 1500,
-                                content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
-                            }).then(function () {
-                                botui.message.add({
-                                    delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师"
-                                }).then(function () {
-                                    botui.action.button({
-                                        delay: 1100,
-                                        action: [{
-                                            text: "为什么叫Mashiro呢？ 🤔",
-                                            value: "why-mashiro"
-                                        }]
-                                    }).then(function (a) {
-                                        thirdpart()
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
-            })
-        },
-        thirdpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "Mashiro以及站名都来自一部动画，因为和主角有一样的爱好~ 如果有兴趣可以找找首页上的视频~"
-            }).then(function () {
-                botui.action.button({
-                    delay: 1500,
-                    action: [{
-                        text: "为什么是白猫呢？ 🤔",
-                        value: "why-cat"
-                    }]
-                }).then(function (a) {
-                    fourthpart()
-                })
-            })
-        },
-        fourthpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "因为对GitHub有种执念… "
-            }).then(function () {
-                botui.message.add({
-                    delay: 1100,
-                    content: "而且我真的是猫控！"
-                }).then(function () {
-                    botui.action.button({
-                        delay: 1500,
-                        action: [{
-                            text: "域名有什么含意吗？(ง •_•)ง",
-                            value: "why-domain"
-                        }]
-                    }).then(function (a) {
-                        fifthpart()
-                    })
-                })
-            })
-        },
-        fifthpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "emmmm，看备案信息你就知道了=.= 本来想要zheng.xin的，但50万真买不起。。"
-            }).then(function () {
-                botui.message.add({
-                    delay: 1600,
-                    content: "那么，仔细看看我的博客吧？ ^_^"
-                })
-            })
-        } 
-}
-bot_ui_ini()
-</script>
+                <h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><p>在想要设置为标题的文字前面加#来表示<br>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p>
+<p>注：标准语法一般在#后跟个空格再写文字，貌似简书不加空格也行。</p>
+<p>示例：</p>
+<pre><code># 这是一级标题
+## 这是二级标题
+### 这是三级标题
+#### 这是四级标题
+##### 这是五级标题
+###### 这是六级标题
+</code></pre><p>效果如下：</p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><hr>
+<h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><ul>
+<li>加粗</li>
+</ul>
+<p>要加粗的文字左右分别用两个*号包起来</p>
+<ul>
+<li>斜体</li>
+</ul>
+<p>要倾斜的文字左右分别用一个*号包起来</p>
+<ul>
+<li>斜体加粗</li>
+</ul>
+<p>要倾斜和加粗的文字左右分别用三个*号包起来</p>
+<ul>
+<li>删除线</li>
+</ul>
+<p>要加删除线的文字左右分别用两个~~号包起来</p>
+<p>示例：</p>
+<pre><code>**这是加粗的文字**
+*这是倾斜的文字*`
+***这是斜体加粗的文字***
+~~这是加删除线的文字~~
+</code></pre><p>效果如下：</p>
+<p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em>`<br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p>
+<hr>
+<h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;<br>n个…<br>貌似可以一直加下去，但没神马卵用</p>
+<p>示例：</p>
+<pre><code>&gt;这是引用的内容
+&gt;&gt;这是引用的内容
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容
+</code></pre><p>效果如下：</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是引用的内容</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><p>三个或者三个以上的 - 或者 * 都可以。</p>
+<p>示例：</p>
+<pre><code>---
+----
+***
+*****
+</code></pre><p>效果如下：<br>可以看到，显示效果是一样的。</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><p>语法：</p>
+<pre><code>![图片alt](图片地址 &apos;&apos;图片title&apos;&apos;)
 
+图片alt就是显示在图片下面的文字，相当于对图片内容的解释。
+图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
+</code></pre><p>效果如下:</p>
+<p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
+u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="blockchain" title="区块链"></p>
+<p>上传本地图片直接点击导航栏的图片标志，选择图片即可</p>
+<h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><p>语法：</p>
+<pre><code>[超链接名](超链接地址 &quot;超链接title&quot;)
+title可加可不加
+</code></pre><p>示例：</p>
+<pre><code>[简书](http://jianshu.com)
+[百度](http://baidu.com)
+</code></pre><p>效果如下：</p>
+<p><a href="http://jianshu.com" target="_blank" rel="noopener">简书</a><br><a href="http://baidu.com" target="_blank" rel="noopener">百度</a></p>
+<p>注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。</p>
+<p><code>&lt;a href=&quot;超链接地址&quot; target=&quot;_blank&quot;&gt;超链接名&lt;/a&gt;</code></p>
+<p>示例<br>    <code>&lt;a href=&quot;https://www.jianshu.com/u/1f5ac0cf6a8b&quot; target=&quot;_blank&quot;&gt;简书&lt;/a&gt;</code></p>
+<h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><ul>
+<li>无序列表</li>
+</ul>
+<p>语法：<br>无序列表用 - + * 任何一种都可以</p>
+<pre><code>- 列表内容
++ 列表内容
+* 列表内容
+
+注意：- + * 跟内容之间都要有一个空格
+</code></pre><p>效果如下：</p>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<ul>
+<li>列表内容</li>
+</ul>
+<h1 id="·有序列表"><a href="#·有序列表" class="headerlink" title="·有序列表"></a>·有序列表</h1><p>语法：<br>数字加点</p>
+<pre><code>1.列表内容
+2.列表内容
+3.列表内容
+
+注意：序号跟内容之间要有空格
+</code></pre><p>效果如下：</p>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<p>列表嵌套</p>
+<p>上一级和下一级之间敲三个空格即可</p>
+<ul>
+<li><p>一级无序列表内容</p>
+<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>一级无序列表内容</p>
+<ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ul>
+<ol>
+<li><p>一级有序列表内容</p>
+<ul>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+<li>二级无序列表内容</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><p>一级有序列表内容</p>
+<ol>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+<li>二级有序列表内容</li>
+</ol>
+</li>
+</ol>
+<h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><p>语法：</p>
+<pre><code>表头|表头|表头
+---|:--:|---:
+内容|内容|内容
+内容|内容|内容
+
+第二行分割表头和内容。
+- 有一个就行，为了对齐，多加了几个
+文字默认居左
+-两边加：表示文字居中
+-右边加：表示文字居右
+</code></pre><p>示例：</p>
+<pre><code>姓名|象征|特性
+:--:|:--:|:--:
+白上吹雪|玉米|猫咪
+夏色祭|灯笼|呼吸
+Mio|树|打麻将真开心
+</code></pre><p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">姓名</th>
+<th style="text-align:center">象征</th>
+<th style="text-align:center">特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">白上吹雪</td>
+<td style="text-align:center">玉米</td>
+<td style="text-align:center">猫</td>
+</tr>
+<tr>
+<td style="text-align:center">夏色祭</td>
+<td style="text-align:center">灯笼</td>
+<td style="text-align:center">呼吸</td>
+</tr>
+<tr>
+<td style="text-align:center">Mio</td>
+<td style="text-align:center">树</td>
+<td style="text-align:center">打麻将真开心</td>
+</tr>
+</tbody>
+</table>
 
             </div>
             <hr>
@@ -606,7 +635,7 @@ bot_ui_ini()
                     </span>
                     <a href="https://rua.kim" class="b-link-green">艾莉雅</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/03/02/test2/" class="b-link-green">test2</a>
+                    <a href="/2019/03/02/test2/" class="b-link-green">Markdown基本语法</a>
                 </p>
             </div>
         </div>
@@ -634,9 +663,9 @@ bot_ui_ini()
                 <a href="/2019/03/15/live2-facerig/">
                     <div class="card-image">
                         
-                        <img src="/images/nya.gif" class="responsive-img" alt="live2_facerig">
+                        <img src="https://i.loli.net/2019/03/19/5c910b3e86510.jpg" class="responsive-img" alt="live2_facerig">
                         
-                        <span class="card-title">live2_facerig</span>
+                        <!-- <span class="card-title">live2_facerig</span> -->
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -681,7 +710,7 @@ FaceRig是steam上的软件 不贵配置要求很低 基于面部捕捉技术来
                         
                         <img src="https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.1/images/5c791d08cde8d.jpg.webp" class="responsive-img" alt="Hexo的matery主题魔改折腾笔记">
                         
-                        <span class="card-title">Hexo的matery主题魔改折腾笔记</span>
+                        <!-- <span class="card-title">Hexo的matery主题魔改折腾笔记</span> -->
                     </div>
                 </a>
                 <div class="card-content article-content">
