@@ -163,9 +163,11 @@ $('.waifu-tool .fui-info-circle').click(function (){
 });
 
 $('.waifu-tool .fui-cross').click(function (){
-    sessionStorage.setItem('waifu-dsiplay', 'none');
+    sessionStorage.setItem('waifu-dsiplay','talk-dsiplay','uploadForm-dsiplay', 'none');
     showMessage('再见，死变态！！！', 1300, true);
     window.setTimeout(function() {$('.waifu').hide();}, 1300);
+	window.setTimeout(function() {$('#talk').hide();}, 1300);
+	window.setTimeout(function() {$('#uploadForm').hide();}, 1300);
 });
 
 $('.waifu-tool .fui-photo').click(function (){
