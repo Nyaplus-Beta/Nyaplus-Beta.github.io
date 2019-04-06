@@ -415,6 +415,7 @@ body {
     height: 100vh !important;
 }
 </code></pre><p>调整卡片位置<br>在\source\css\matery.css<br>artDetail .card里增加一个top属性<br>top:6vh;</p>
+<p>调整手机端显示位置比例<br>在\source\css\my.css<br>加入<br>    @media only screen and (max-width: 601px){<br>        .bg-covers{<br>            background-repeat:no-repeat;<br>            background-attachment:fixed;<br>            background-size: cover;<br>            bottom: 0px;<br>        }<br>    }</p>
 <p>文章底部卡片背景比例修复<br>article .card-image img修改为height: 100%;</p>
 <h4 id="魔改记录3-修改首页卡片背景透明度"><a href="#魔改记录3-修改首页卡片背景透明度" class="headerlink" title="魔改记录3. 修改首页卡片背景透明度"></a>魔改记录3. 修改首页卡片背景透明度</h4><p>修改source\libs\materialize目录下的materialize.min.css<br>card的background-color:属性查找.card<br>把卡片默认背景#FFF改为rgba(255, 255, 255, .8)<br>card的action属性查找.card .card-action<br><code>background-color: inherit</code><br>修改为<br><code>background-color: rgba(255, 255, 255, .0)</code></p>
 <h4 id="魔改记录4-修改卡片背景图上的标题为隐藏"><a href="#魔改记录4-修改卡片背景图上的标题为隐藏" class="headerlink" title="魔改记录4. 修改卡片背景图上的标题为隐藏"></a>魔改记录4. 修改卡片背景图上的标题为隐藏</h4><p>因为修改css太麻烦索性不要这个卡片标题了不影响检索<br>直接在index.ejs注释掉<br><code>&lt;!-- &lt;span class=&quot;card-title&quot;&gt;&lt;%- post.title %&gt;&lt;/span&gt; --&gt;</code><br>还有文章底部的卡片标题<br>\layout_partial\prev-next.ejs<br><code>&lt;!-- &lt;span class=&quot;card-title&quot;&gt;&lt;%- page.prev.title %&gt;&lt;/span&gt; --&gt;</code><br>一共四个相同属性 都要注释掉<br>归档的白色背景去除<br>source\css\matery.css<br>注释掉.cd-timeline-content的<code>background: #ffffff;</code><br>layout\archive.ejs<br>注释掉<code>&lt;!-- &lt;span class=&quot;card-title&quot;&gt;&lt;%- post.title %&gt;&lt;/span&gt; --&gt;</code></p>
@@ -544,6 +545,8 @@ body {
     font-size: 1.1rem;
 }
 </code></pre><h2 id="魔改记录17-修改首页推荐文章阅读更多按钮的颜色"><a href="#魔改记录17-修改首页推荐文章阅读更多按钮的颜色" class="headerlink" title="魔改记录17. 修改首页推荐文章阅读更多按钮的颜色"></a>魔改记录17. 修改首页推荐文章阅读更多按钮的颜色</h2><p>layout_widget\recommend.ejs</p>
+<h2 id="魔改记录18-修改音乐播放器位置大小"><a href="#魔改记录18-修改音乐播放器位置大小" class="headerlink" title="魔改记录18. 修改音乐播放器位置大小"></a>魔改记录18. 修改音乐播放器位置大小</h2><p>\libs\aplayer\APlayer.min.css<br>.aplayer-body<br>bottom:500px;<br>max-width:380px</p>
+<p>.aplayer.aplayer-fixed<br>bottom:500px;<br>max-width:380px;</p>
 
             </div>
             <hr>
