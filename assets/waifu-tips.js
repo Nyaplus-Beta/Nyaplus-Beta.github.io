@@ -359,7 +359,7 @@ function loadModel(modelId, modelTexturesId){
     localStorage.setItem('modelId', modelId);
     if (modelTexturesId === undefined) modelTexturesId = 0;
     localStorage.setItem('modelTexturesId', modelTexturesId);
-    loadlive2d('live2d', "/assets/model/SaberLily/ylia02.model.json");
+    loadlive2d('live2d',"https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.9/model/1/1.json");
 }
 
 function loadRandModel(){
@@ -370,7 +370,7 @@ function loadRandModel(){
     
     $.ajax({
         cache: false,
-        url: "/assets/model/SaberLily/ylia02.model.json"+modelTexturesRandMode+'_textures/index.php?id='+modelId+'-'+modelTexturesId,
+        url: "https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.9/model/1/2.json"+modelTexturesRandMode+'_textures/index.php?id='+modelId+'-'+modelTexturesId,
         dataType: "json",
         success: function (result){
             if (result.textures['id'] == 1 && (modelTexturesId == 1 || modelTexturesId == 0)) {
@@ -390,7 +390,7 @@ function loadOtherModel(){
     
     $.ajax({
         cache: false,
-        url: "/assets/model/SaberLily/ylia02.model.json"+modelTexturesRandMode+'/index.php?id='+modelId,
+        url: "https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.9/model/1/2.json"+modelTexturesRandMode+'/index.php?id='+modelId,
         dataType: "json",
         success: function (result){
             loadModel(result.model['id']);
