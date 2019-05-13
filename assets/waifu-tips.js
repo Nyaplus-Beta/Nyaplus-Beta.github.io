@@ -7,7 +7,7 @@ function doUpload() {
     }
     var formData = new FormData($("#uploadForm")[0])
     $.ajax({
-        url: '/ai/pic',
+        url: 'https://biguokang.cn/ai/pic',
         type: 'POST',
         data: formData,
         dataType: 'json',
@@ -44,7 +44,7 @@ function add() {
 
     if(text.length>0){
     $.ajax({
-        url: "https://openapi.tuling123.com/openapi/api/v2/chat",//接口地址
+        url: "https://biguokang.cn/chat",//接口地址
         type: "post",
         dataType: "json",
         data: {
