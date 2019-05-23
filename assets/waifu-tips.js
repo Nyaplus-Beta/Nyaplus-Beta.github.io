@@ -132,7 +132,7 @@ String.prototype.render = function (context) {
 var re = /x/;
 console.log(re);
 re.toString = function() {
-    showMessage('很好，你打开了控制台，代码被压缩打包过的，没法直接复制拿来用，可以去我github下载,顺便给我star一下是最吼的，给我follow那更是exciting', 5000, true);
+    showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000, true);
     return '';
 };
 
@@ -327,7 +327,7 @@ function initModel(waifuPath){
                     var text = tips.text;
                     if(Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1)-1];
                     text = text.render({text: $(this).text()});
-                    showMessage(text, 3000);
+                    showMessage(text, 2000);
                 });
             });
             $.each(result.click, function (index, tips){
@@ -359,7 +359,9 @@ function loadModel(modelId, modelTexturesId){
     localStorage.setItem('modelId', modelId);
     if (modelTexturesId === undefined) modelTexturesId = 0;
     localStorage.setItem('modelTexturesId', modelTexturesId);
-    loadlive2d('live2d',"https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.9/model/1/1.json");
+	loadlive2d('live2d',"assets/model/1/aoi.json");
+	// loadlive2d('live2d',"https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@2.3/model/3/Nya.model.json");
+	// loadlive2d('live2d',"https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.9/model/1/2.json"); 
 }
 
 function loadRandModel(){
@@ -370,7 +372,7 @@ function loadRandModel(){
     
     $.ajax({
         cache: false,
-        url: "https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.9/model/1/2.json"+modelTexturesRandMode+'_textures/index.php?id='+modelId+'-'+modelTexturesId,
+        url: "//api.fghrsh.net/live2d/"+modelTexturesRandMode+'_textures/index.php?id='+modelId+'-'+modelTexturesId,
         dataType: "json",
         success: function (result){
             if (result.textures['id'] == 1 && (modelTexturesId == 1 || modelTexturesId == 0)) {
@@ -390,7 +392,7 @@ function loadOtherModel(){
     
     $.ajax({
         cache: false,
-        url: "https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.9/model/1/2.json"+modelTexturesRandMode+'/index.php?id='+modelId,
+        url: "//api.fghrsh.net/live2d/"+modelTexturesRandMode+'/index.php?id='+modelId,
         dataType: "json",
         success: function (result){
             loadModel(result.model['id']);
