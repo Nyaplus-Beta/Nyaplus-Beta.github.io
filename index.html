@@ -560,188 +560,16 @@ $(function () {
             <div class="card">
                 <div class="card-content">
                     
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="fa fa-lightbulb-o"></i>&nbsp;&nbsp;一条咸鱼
-    </div>
-<div id="hello-mashiro" class="popcontainer">
-  <center>
-  <p>
-  </p>
-  <h4>
-  与&nbsp;<ruby>
-  艾莉雅&nbsp;<rp>
-  （</rp>
-  <rt>
- Aaliyah</rt>
-  <rp>
-  ）</rp>
-  </ruby>
-  对话中...</h4>
-  <p>
-  </p>
-  </center>
-  <bot-ui>
-</bot-ui></div>
-<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
-<script src="https://unpkg.com/botui/build/botui.min.js"></script>
-<script>
-function bot_ui_ini() {
-    var botui = new BotUI("hello-mashiro");
-    botui.message.add({
-        delay: 800,
-        content: "Hi🌽"
-    }).then(function () {
-        botui.message.add({
-            delay: 1100,
-            content: "这里是艾莉雅哒笔记"
-        }).then(function () {
-            botui.message.add({
-                delay: 1100,
-                content: "记录一些奇奇怪怪的东西~"
-            }).then(function () {
-                botui.action.button({
-                    delay: 1600,
-                    action: [{
-                        text: "然后呢？",
-                        value: "sure"
-                    }, {
-                        text: "少废话！ 🐶",
-                        value: "skip"
-                    }]
-                }).then(function (a) {
-                    "sure" == a.value && sure();
-                    "skip" == a.value && end()
-                })
-            })
-        })
-    });
-    var sure = function () {
-			botui.message.add({
-                delay: 600,
-                content: "我的名字叫吉良吉影，33岁。"
-
-            }).then(function () {
-                secondpart()
-            })
-        },
-        end = function () {
-            botui.message.add({
-                delay: 600,
-                content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
-            })
-        },
-        secondpart = function () {
-            botui.message.add({
-                delay: 1500,
-                content: " 住在杜王町东北部的别墅区一带，未婚。"
-            }).then(function () {
-                botui.message.add({
-                    delay: 1500,
-                    content: "每天都要加班到晚上8点才能回家。"
-                }).then(function () {
-                    botui.message.add({
-                        delay: 1200,
-                        content: " 我不抽烟，酒仅止于浅尝。"
-                    }).then(function () {
-                        botui.message.add({
-                            delay: 1500,
-                            content: "晚上11点睡，每天要睡足8个小时。"
-                        }).then(function () {
-                            botui.message.add({
-                                delay: 1500,
-                                content: "睡前，我一定喝一杯温牛奶，然后做20分钟的柔软操，上了床，马上熟睡。"
-                            }).then(function () {
-                                botui.message.add({
-                                    delay: 1800,
-                                    content: "一觉到天亮，决不把疲劳和压力，留到第二天。 医生都说我很正常。"
-                                }).then(function () {
-                                    botui.action.button({
-                                        delay: 1100,
-                                        action: [{
-                                            text: "吉良吉影？jojo？",
-                                            value: "why-mashiro"
-                                        }]
-                                    }).then(function (a) {
-                                        thirdpart()
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
-            })
-        },
-        thirdpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "你刚刚说了jojo对不对？"
-            }).then(function () {
-                botui.action.button({
-                    delay: 1500,
-                    action: [{
-                        text: "没有我没说",
-                        value: "why-cat"
-                    }]
-                }).then(function (a) {
-                    fourthpart()
-                })
-            })
-        },
-        fourthpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "食堂泼辣酱 The word! "
-            }).then(function () {
-                botui.message.add({
-                    delay: 1100,
-                    content: "欧拉！欧拉！欧拉！欧拉！欧拉！欧拉！欧拉！"
-                }).then(function () {
-                    botui.action.button({
-                        delay: 1500,
-                        action: [{
-                            text: "The word! 木大！ 木大！ 木大！ 木大！ 木大！ 木大！ 木大！",
-                            value: "why-domain"
-                        }]
-                    }).then(function (a) {
-                        fifthpart()
-                    })
-                })
-            })
-        },
-        fifthpart = function () {
-			
-            botui.message.add({
-                delay: 1E3,
-                content: "第三弹 败者食尘！"
-            }).then(function () {
-				botui.message.add({
-					delay: 2000,
-					content: "![](https://i.loli.net/2019/03/18/5c8e71511252b.jpg)"
-                }).then(function () {
-				window.location.replace("https://rua.kim")	
-                })
-            })
-        } 
-}
-bot_ui_ini()
-</script>
-	</div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            学如逆水行舟，不进则退。
-        </div>
-    </div>
-
-                    
 
                     
                         
 
 <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
 <div class="music-player">
+    
+    <div class="title center-align">
+        <i class="fa fa-music"></i>&nbsp;&nbsp;听听音乐
+    </div>
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s12">
@@ -755,7 +583,7 @@ bot_ui_ini()
 $(function () {
     new APlayer({
         container: document.getElementById('aplayer'),
-        fixed: 'true' === 'true',
+        fixed: 'false' === 'true',
         autoplay: 'false' === 'true',
         theme: '#ff88b8',
         loop: 'all',
@@ -786,7 +614,7 @@ $(function () {
     
     
     <div class="col s12">
-        <div class="post-card" style="background-image: url('https://i.loli.net/2019/03/19/5c910b3e86510.jpg')">
+        <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@2.6/images/5c910b3e86510.webp')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -806,7 +634,7 @@ $(function () {
     
     
     <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('https://i.loli.net/2019/05/12/5cd839f01689d.jpg')">
+        <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@2.6/images/5cd839f01689d.webp')">
             <div class="post-body">
                 <div class="post-categories">
                     
@@ -866,7 +694,7 @@ $(function () {
                     <a target="_blank" href="/2019/05/04/yshq/">
                         <div class="card-image">
                             
-                            <img src="https://i.loli.net/2019/05/12/5cd839f01689d.jpg" class="responsive-img" alt="影视后期制作专业术语科普">
+                            <img src="https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@2.6/images/5cd839f01689d.webp" class="responsive-img" alt="影视后期制作专业术语科普">
                             
                             <!-- <span class="card-title">影视后期制作专业术语科普</span> -->
                         </div>
@@ -912,7 +740,7 @@ $(function () {
                     <a target="_blank" href="/2019/03/15/live2-facerig/">
                         <div class="card-image">
                             
-                            <img src="https://i.loli.net/2019/03/19/5c910b3e86510.jpg" class="responsive-img" alt="Live2D教程">
+                            <img src="https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@2.6/images/5c910b3e86510.webp" class="responsive-img" alt="Live2D教程">
                             
                             <!-- <span class="card-title">Live2D教程</span> -->
                         </div>

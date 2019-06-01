@@ -378,7 +378,7 @@ function loadRandModel(){
             if (result.textures['id'] == 1 && (modelTexturesId == 1 || modelTexturesId == 0)) {
                 showMessage('没衣服穿了', 3000, true);
             } else {
-                showMessage('别换了，没有比基尼，滚！！', 3000, true);
+                showMessage('别换了，只有我一个！！', 3000, true);
             }
             loadModel(modelId, result.textures['id']);
         }
