@@ -2,14 +2,14 @@
 *** CUSTOMIZE THE LOADING SCREEN BACKGROUND + ICON COLORS
 ************************************************************/
 /* loading screen background color */
-#bonfire-pageloader {
-	background-calor: #fff;
-}
+
 /***********************************************************
 *** THE NITTY-GRITTY
 ************************************************************/
 /* the pageloader */
 #bonfire-pageloader {
+	background-color:#FFF;
+	background-image: url("https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@2.5/images/loading.webp");
 	position:absolute;
 	z-index:99999999999999;
 	width:100%;
@@ -18,16 +18,6 @@
 	right:0;
 	top:0;
 	bottom:0;
-	
-}
-
-.bonfire-pageloader-hide {
-	display:none;
-}
-
-/* the loading icon */
-.bonfire-pageloader-icon {
-	background-image: url("https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@2.5/images/loading.webp");
 	background-repeat: no-repeat;
     background-position: center;
 	margin: 0 auto;
@@ -35,9 +25,13 @@
 	width: 100%;
 	height: 100%;
 	opacity: 1;
-
-
+	
 }
+
+.bonfire-pageloader-hide {
+	display:none;
+}
+
 /****DEBUT PROGRESS****/
 #progress {
     position: fixed;
