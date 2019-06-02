@@ -28,7 +28,7 @@
 }
 
 body {
-    background-image: url(https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@1.1/images/5c66379086ae3.webp);
+    background-image: url("https://cdn.jsdelivr.net/gh/Nyaplus-Beta/cdn@2.5/images/loading.webp");
     background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center;
@@ -417,8 +417,8 @@ header .go-back i {
 	/* top: 270px; */
     margin-bottom: 10px;
     position: relative;
-	background-color: rgba(000, 000, 00, 0.4);
-	border-radius: 15px 15px 0px 0px;
+/* 	background-color: rgba(000, 000, 00, 0.4);
+	border-radius: 15px 15px 0px 0px; */
 	margin: 0 auto;
 }
 
@@ -429,8 +429,8 @@ header .go-back i {
     color: #fff;
 	/* position: relative; */
 	/* top: 270px; */
-	background-color: rgba(000, 000, 00, 0.4);
-	border-radius: 0px 0px 15px 15px;
+/* 	background-color: rgba(000, 000, 00, 0.4);
+	border-radius: 0px 0px 15px 15px; */
 }
 
 .bg-cover .post-title {
